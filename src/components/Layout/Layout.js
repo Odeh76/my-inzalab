@@ -1,13 +1,16 @@
 import React from 'react'
-import {Main, Footer} from './LayoutStyles'
+import { GlobalStyles } from '../../theme/GlobalStyles'
+import { Div, Main, Footer } from './LayoutStyles'
+
 
 
 function Layout({children}) {
     return (
-        <Main>
-            {children}
+        <Div>
+            <GlobalStyles />
+            <Main>{children}</Main>
             <Footer />
-        </Main>
+        </Div>
     )
 }
 
