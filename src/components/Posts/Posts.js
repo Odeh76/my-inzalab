@@ -5,7 +5,7 @@ function Posts() {
     
     return (
         <div>
-            Posts work
+            Posts work!!
         </div>
     )
 }
