@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components';
-import { WhatIsInzaLab } from '../../components/Buttons/ArticleLinks/ArticleLinksStyles'
-import { Authentic, Advertising, MainHeader } from '../../components/Headers/MainHeadersStyles'
+import { MainHeader } from '../../components/Headers/MainHeadersStyles'
 
 
 
@@ -11,15 +10,15 @@ function About() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState()
 
-    const url = 'https://inzalabcontent.com/wp-json/wp/v2/posts?_embed&order=asc'
+    const aboutUrl = 'https://inzalabcontent.com/wp-json/wp/v2/posts?_embed&include[]=63'
     useEffect(() => {
-        if(!url) return;
-        fetch(url)
+        if(!aboutUrl) return;
+        fetch(aboutUrl)
         .then(data => data.json())
         .then(setData)
         .then(() => setLoading(false))
         .catch(setError);
-    }, [url]);
+    }, [aboutUrl]);
     console.log(data)
 
 
@@ -31,12 +30,11 @@ const date = new Date((post.date)).toUTCString().split(' ').slice(0, 4).join(' '
  return (
      <>
         <MainHeader key={post.id} dangerouslySetInnerHTML={{__html: post.title.rendered}} />
-        <Typography key={post.content} dangerouslySetInnerHTML={{__html: post.content.rendered}} />
-        <Typography key={post.excerpt} dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
-        <li dangerouslySetInnerHTML={{__html: date}}></li>
+        <Typography key={post.content.rendered} dangerouslySetInnerHTML={{__html: post.content.rendered}} />
+        <Typography key={post.excerpt.rendered} dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
+        <li key={post.date} dangerouslySetInnerHTML={{__html: date}}></li>
         <li>Post Author:</li>
-        <li dangerouslySetInnerHTML={{__html: post._embedded.author[0].name}}></li>
-      
+        <li key={post._embedded.author[0].name} dangerouslySetInnerHTML={{__html: post._embedded.author[0].name}}></li>
         <br />
      </>
  )
