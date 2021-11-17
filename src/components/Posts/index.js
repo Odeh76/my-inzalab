@@ -1,11 +1,11 @@
 import React from 'react'
-
+import { GenZOrBrand, LearnMore, ArticleLinks, ResetDefaultButtonStyles } from '../Buttons'
 function Posts() {
 
     
     return (
         <div>
-            Posts work!!
+            posts work
         </div>
     )
 }

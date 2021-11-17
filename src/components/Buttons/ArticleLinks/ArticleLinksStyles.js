@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ResetDefaultButtonStyles } from "../ResetDefaultButtonStyles/ResetDefaultButtonStyles";
+import { ResetDefaultButtonStyles } from "../ResetDefaultButtonStyles/Styles";
 
 
 

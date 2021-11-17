@@ -1,9 +1,11 @@
 import React from 'react'
+import { LearnMoreBtn } from './Styles'
+
 
 function LearnMore({children}) {
     return (
         <div>
-            {children}
+            <LearnMoreBtn />
         </div>
     )
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import { GlobalStyles } from '../../theme/GlobalStyles'
-import { Div, Main, Footer } from './LayoutStyles'
-
+import { Div, Main, Footer } from './Styles'
 
 
 function Layout({children}) {

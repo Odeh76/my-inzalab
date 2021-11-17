@@ -1,6 +1,6 @@
 import React from 'react'
-import Posts from '../../components/Posts/Posts'
-import About from '../About/About'
+import Posts from '../../components/Posts'
+import About from '../About'
 
 
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components';
-import { MainHeader } from '../../components/Headers/MainHeadersStyles'
+import { MainHeader } from '../../components/Headers/MainHeaders/Styles'
 
 
 
