@@ -3,7 +3,6 @@ import { Posts, Layout } from "./components";
 
 
 
-
 function App() {
   return (
     <Layout>

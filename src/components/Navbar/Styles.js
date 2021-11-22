@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 
 
-export const SideBar = styled.nav`
+export const Sidebar = styled.nav`
     width: 250px;
     height: 100%;
     display: flex;

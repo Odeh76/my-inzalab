@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from "react-router-dom";
 
 
 
@@ -617,3 +618,20 @@ export const Main = styled.main`
    
 `
 
+export const Navbar = styled.nav`
+width: 250px;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+position: fixed;
+left: 0;
+`
+
+export const NavLink = styled(Link)`
+  font-size: 2rem;
+  font-family: var(--lato);
+  text-transform: uppercase;
+  font-weight: 900;
+  
+`
