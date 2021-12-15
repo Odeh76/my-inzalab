@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { GlobalStyles } from '../../theme/GlobalStyles'
-import { Div, Main, Footer, Navbar, NavLink } from './Styles'
+import Navbar from '../Navbar'
+import { Div, Main, Footer } from './Styles'
+
 
 function Layout({children}) {
 
@@ -14,14 +16,7 @@ function Layout({children}) {
 
     return (
         <Div>
-            <Navbar openMenu={openMenu} onClick={handleClick}>
-            {/* <NavLink>Home</NavLink>
-            <NavLink>25 Under 25</NavLink>
-            <NavLink>Programs</NavLink>
-            <NavLink>Resources</NavLink>
-            <NavLink>Meet The ITOs</NavLink>
-            <NavLink>Contact</NavLink> */}
-            </Navbar>
+            <Navbar />
             <GlobalStyles />
             <Main>{children}</Main>
             <Footer />

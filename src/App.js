@@ -1,13 +1,16 @@
 import Home from "./pages/Home";
 import { Posts, Layout } from "./components";
+import { BrowserRouter as Router} from "react-router-dom";
 
 
 
 function App() {
   return (
-    <Layout>
-      <Home />
-    </Layout>
+      <Router>
+          <Layout>
+            <Home />
+          </Layout>
+      </Router>
   );
 }
 
