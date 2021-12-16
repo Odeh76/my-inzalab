@@ -1,5 +1,5 @@
 import React from 'react'
-import { MainHeader } from './MainHeadersStyles'
+import { MainHeader } from './Styles'
 
 function MainHeaders({children}) {
     return (

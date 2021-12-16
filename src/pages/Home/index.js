@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { WelcomeTo, RestartAlphabet } from '../../components/Headers/SecondaryHeaders/Styles'
 import Posts from '../../components/Posts'
 import About from '../About'
 
@@ -16,10 +17,15 @@ export const HomeImage = styled.img`
     background-position: center center;
 `
 
+
+
+
 function Home() {
     return (
         <>
+        <WelcomeTo>Welcome to</WelcomeTo>
         <HomeImage />
+        <RestartAlphabet>Let's restart the alphabet</RestartAlphabet>
         <About />
         <Posts />
         </>

@@ -16,12 +16,12 @@ export const NavLink = styled(Link)`
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-transform: uppercase;
     font-size: 1.5rem;
     color: var(--blackMain);
     padding-top: 16px;
     cursor: pointer;
+    letter-spacing: 0.05rem;
     font-weight: 900;
 `
