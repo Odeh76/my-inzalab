@@ -1,31 +1,33 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components';
 import { GenZOrBrand, LearnMore, ArticleLinks, ResetDefaultButtonStyles } from '../Buttons'
+import axios from 'axios';
 
 
+
+const postsUrl = 'https://www.inzalabcontent.com/wp-json/wp/v2/posts?_embed&order=desc'
 
 function Posts() {
-    const [data, setData] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState();
+    
+    const [posts, setPosts] = useState([]);
 
-    const url = 'https://www.inzalabcontent.com/wp-json/wp/v2/posts?_embed&order=desc'
-
+    const getPosts = async () => {
+        try {
+            const data = await axios.get(postsUrl);
+            console.log(data.data);
+            setPosts(data.data);
+        } catch (e) {
+           console.log(e) 
+        }
+    };
 
     useEffect(() => {
-        if(!url) return;
-        fetch(url)
-        .then(data => data.json())
-        .then(setData)
-        .then(() => setLoading(false))
-        .catch(setError);
-    }, [url]);
-    console.log(data)
-
+        getPosts();
+    }, [])
 
     return (
         <>
-        {data.map(post => {
+        {posts.map(post => {
             const date = new Date((post.date)).toUTCString().split(' ').slice(0, 4).join(' ');
             return (
                 <>
