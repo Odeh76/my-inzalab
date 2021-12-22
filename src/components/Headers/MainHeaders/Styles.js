@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const MainHeader = styled.h1`
-    color: var(--blackMain);
+    color: ${props => props.theme.color};
     font-family: var(--lato);
     font-size: 3.5rem;
     font-weight: 900;

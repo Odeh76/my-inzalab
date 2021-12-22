@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components';
-import { GenZOrBrand, LearnMore, ArticleLinks, ResetDefaultButtonStyles } from '../Buttons'
 import axios from 'axios';
 
 
@@ -28,11 +27,11 @@ function Posts() {
     return (
         <>
         {posts.map(post => {
-            const date = new Date((post.date)).toUTCString().split(' ').slice(0, 4).join(' ');
+            // const date = new Date((post.date)).toUTCString().split(' ').slice(0, 4).join(' ');
             return (
                 <>
                     <Typography key={post.id} dangerouslySetInnerHTML={{__html: post.content.rendered}} />
-                    <img src={post._embedded["wp:featuredmedia"][0].source_url} alt="inzalab image" />
+                    <img src={post._embedded["wp:featuredmedia"][0].source_url} alt="inzalab content" />
                 </>
             )
         })}

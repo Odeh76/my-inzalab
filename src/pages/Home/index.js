@@ -23,11 +23,11 @@ export const HomeImage = styled.img`
 function Home() {
     return (
         <>
-        <WelcomeTo>Welcome to</WelcomeTo>
-        <HomeImage />
-        <RestartAlphabet>Let's restart the alphabet</RestartAlphabet>
-        <About />
-        <Posts />
+            <WelcomeTo>Welcome to</WelcomeTo>
+            <HomeImage />
+            <RestartAlphabet>Let's restart the alphabet</RestartAlphabet>
+            <About />
+            <Posts />
         </>
     )
 }
