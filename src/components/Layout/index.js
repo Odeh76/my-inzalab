@@ -1,7 +1,9 @@
 import React from 'react'
+import { Navbar } from '..'
 import { GlobalStyles } from '../../theme/GlobalStyles'
-import Navbar from '../Navbar'
 import { Div, Main, Footer } from './Styles'
+
+
 
 
 function Layout({children}) {

@@ -31,7 +31,7 @@ function Posts() {
             return (
                 <>
                     <Typography key={post.id} dangerouslySetInnerHTML={{__html: post.content.rendered}} />
-                    <img src={post._embedded["wp:featuredmedia"][0].source_url} alt="inzalab content" />
+                    <img style={{width: '100%'}} src={post._embedded["wp:featuredmedia"][0].source_url} alt="inzalab content" />
                 </>
             )
         })}

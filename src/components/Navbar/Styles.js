@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 
 
 export const Sidebar = styled.nav`
-    width: 220px;
     height: 100%;
     position: fixed;
     left: 0;
+    z-index: 5;
     background-color: var(--whiteMain);
 
     @media only screen and (max-width: 48em) {
@@ -19,18 +19,18 @@ export const Sidebar = styled.nav`
 `
 
 export const NavLink = styled(Link)`
+    display: flex;
+    justify-content: center;
     font-family: var(--lato);
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-transform: uppercase;
     font-size: 1.5rem;
     color: var(--blackMain);
-    padding-top: 16px;
     cursor: pointer;
     letter-spacing: 0.05rem;
     font-weight: 900;
+    padding-top: 16px;
+    margin: 0 16px;
 
     @media only screen and (max-width: 48em) {
         align-items: flex-start;
