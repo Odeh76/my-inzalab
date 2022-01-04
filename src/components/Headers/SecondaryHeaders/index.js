@@ -1,7 +1,7 @@
 import React from 'react'
 import { SecondaryHeader } from './Styles'
 
-function MainHeaders({children}) {
+function SecondaryHeader ({children}) {
     return (
         <SecondaryHeader>{children}</SecondaryHeader> 
     )

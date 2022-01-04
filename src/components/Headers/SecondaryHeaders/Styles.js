@@ -8,5 +8,16 @@ export const SecondaryHeader = styled.h6`
     justify-content: center;
 `
 
-export const WelcomeTo = styled(SecondaryHeader)``
-export const RestartAlphabet = styled(SecondaryHeader)``
+export const WelcomeTo = styled(SecondaryHeader)`
+    top: 100px;
+    position: relative;
+`
+export const RestartAlphabet = styled(SecondaryHeader)`
+    font-size: 1rem !important;
+`
+export const WeAreGenZ = styled(SecondaryHeader)`
+    font-size: 2rem !important;
+    color: var(--mustard) !important;
+    text-transform: none;
+    font-weight: 700;
+`

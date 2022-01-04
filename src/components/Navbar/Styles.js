@@ -1,10 +1,23 @@
 import styled from "styled-components"
 import { Link } from 'react-router-dom'
+import {FaBars, FaTimes} from 'react-icons/fa'
 
+export const Bars = styled(FaBars)`
+    font-size: 2rem;
+    display: ${({openMenu}) => openMenu ? 'none' : 'block'};
+
+`
+
+export const CloseButton = styled(FaTimes)`
+    font-size: 2rem;
+    display: ${({openMenu}) => openMenu ? 'none' : 'block'};
+
+`
 
 
 
 export const Sidebar = styled.nav`
+    display: ${({open}) => open ? 'none' : 'block'};
     height: 100%;
     position: fixed;
     left: 0;

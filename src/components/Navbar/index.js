@@ -1,11 +1,20 @@
-import React from 'react'
-import { Sidebar, NavLink } from './Styles'
+import React, { useState } from 'react'
+import { Sidebar, NavLink, Bars, CloseButton  } from './Styles'
 
 
 
 function Navbar() {
+
+    const [openMenu, setOpenMenu] = useState(false);
+    
+    const handleClick = () => {setOpenMenu(!openMenu)};
+    const closeMenu = () => {setOpenMenu(false)};
+
+
     return (
-        <Sidebar>
+        <Sidebar openMenu={openMenu}>
+            <Bars />
+            <CloseButton />
             <NavLink to="/">Home</NavLink>
             <NavLink to="/25under25">25 Under 25</NavLink>
             <NavLink to="programs">Programs</NavLink>
