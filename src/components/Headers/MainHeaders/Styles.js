@@ -16,7 +16,8 @@ export const MainHeader = styled.h1`
         letter-spacing: 0.3rem;
     } 
 `
-export const Authentic = styled(MainHeader)``
+export const Authentic = styled(MainHeader)`
+`
 export const Programs = styled(MainHeader)``
 export const TwentyFiveUnderTwentyFive = styled(MainHeader)``
 export const Resources = styled(MainHeader)``

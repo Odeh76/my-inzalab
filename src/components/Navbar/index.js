@@ -7,8 +7,8 @@ function Navbar() {
 
     const [openMenu, setOpenMenu] = useState(false);
     
-    const handleClick = () => {setOpenMenu(!openMenu)};
-    const closeMenu = () => {setOpenMenu(false)};
+    // const handleClick = () => {setOpenMenu(!openMenu)};
+    // const closeMenu = () => {setOpenMenu(false)};
 
 
     return (

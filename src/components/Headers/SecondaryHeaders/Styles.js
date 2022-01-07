@@ -9,8 +9,8 @@ export const SecondaryHeader = styled.h6`
 `
 
 export const WelcomeTo = styled(SecondaryHeader)`
-    top: 100px;
     position: relative;
+    top: 40px;
 `
 export const RestartAlphabet = styled(SecondaryHeader)`
     font-size: 1rem !important;
