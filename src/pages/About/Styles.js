@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import aboutImage from '../../assets/img/aboutImage.png'
 import aboutImage2 from '../../assets/img/aboutImage2.png'
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles';
+import {FaUserTie, FaHiking, FaMobileAlt, FaRing, FaCodeBranch, FaSmile, FaCat, FaCrow, FaCoffee, FaSpider, FaKey} from 'react-icons/fa'
 
 
 export const AdvertisingWord = styled.div`
@@ -27,7 +28,8 @@ export const AboutContainer = styled.div`
 `
 
 export const Authentic = styled(MainHeader)`
-  
+  position: relative;
+  top: 16px;
 `
 
 export const AboutImage = styled.img`
@@ -46,21 +48,164 @@ export const AboutImage2  = styled.img`
   background-position: center center;
 `
 
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+
+@media only screen and (max-width: 64em) { 
+  flex-direction: column;
+}
+
+`
+
+export const ClientsList = styled.ul`
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+align-items: center;
+justify-items: center;
+list-style: none;
+gap: 1rem;
+width: 100%;
+div {
+  font-size: 5rem;
+  padding: 1rem;
+}
+`
+
+export const OptionButton = styled.button`
+ 
+    font-family: var(--lato) !important;
+    font-weight: 900 !important;
+    background: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 3rem !important;
+    
+    div {
+        display: flex;
+        padding: 1.5rem;
+        
+    }
+
+    .optionMobileIcon {
+        margin-left: -0.59rem;
+    }
+
+    // Mobile max-width: 640px
+@media only screen and (max-width: 40em) {
+    width: 156px;
+    height: 128px;
+    font-size: 1.5rem;
+    position: relative;
+    margin: 0 auto 1rem auto;
+
+
+        div {
+            font-size: 3rem;
+        }
+
+        .optionMobileIcon {
+            margin-left: -1.2rem;
+        }
+
+
+    }
+
+    
+
+
+// Tablet screens min-width 641px and max-width 1024px
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    width: 50%;
+    height: 250px;
+    font-size: 3rem;
+
+    .optionMobileIcon {
+        margin-left: -1.2rem;
+    }
+}
+
+// Laptop screens min-width 1025px and max-width: 1440px;
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+    width: 470px;
+    height: 388px;
+    margin: 0 auto;
+    font-size: 3rem;
+    div {
+        font-size: 5rem;
+
+    }
+
+    .optionMobileIcon {
+        margin-left: -2rem;
+    }
+} 
+
+// Desktops and largest screens min-width 1441px and max-width 1920px
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+    width: 470px;
+    height: 388px;
+    margin: 0 auto;
+    font-size: 3rem;
+
+    div {
+        font-size: 5rem;
+    }
+
+    .optionMobileIcon {
+        margin-left: -2rem;
+    }
+ }
+
+ // Largest screens
+@media only screen and (min-width: 120.063em) { 
+    width: 470px;
+    height: 388px;
+    font-size: 3rem;
+
+    div {
+        font-size: 5rem;
+    }
+
+    .optionMobileIcon {
+        margin-left: -2rem;
+    }
+}
+
+`
+
+export const BrandButton = styled(OptionButton)`
+    
+`
+
 export const InnerImageContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 50%;
+  
 `
 
 
 
 export const Typography = styled.div`
     font-family: var(--lato);
-    width: 60%;
-    text-align: justify;
+    width: 280px;
+    text-align: left;
     font-size: 1.5rem;
     margin-top: 32px;
+    position: relative;
+    z-index: 3;
+`
+
+
+export const Typography2 = styled(Typography)`
+  font-size: 1rem;
 `
 
   
@@ -81,4 +226,31 @@ export const Typography = styled.div`
   position: relative;
 
 } 
+`
+
+export const YellowRectangle = styled.div`
+-webkit-clip-path: polygon(46% 0, 100% 0%, 59% 100%, 0% 100%);
+clip-path: polygon(46% 0, 100% 0%, 59% 100%, 0% 100%);
+height: 728px;
+width: 350px;
+position: absolute;
+background-color: var(--yellow);
+top: 0;
+right: 0;
+margin-right: 64px;
+transform: skew(-25deg);
+transform-origin: 0 0;
+`
+
+export const YellowRectangleClients = styled.div`
+-webkit-clip-path: polygon(46% 0, 100% 0%, 59% 100%, 0% 100%);
+clip-path: polygon(46% 0, 100% 0%, 59% 100%, 0% 100%);
+height: 400px;
+width: 350px;
+background-color: var(--yellow);
+transform: skew(-20deg);
+transform-origin: 0 0;
+position: absolute;
+left: 350px;
+z-index: -1;
 `

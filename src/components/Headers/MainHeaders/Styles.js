@@ -27,6 +27,4 @@ export const Advertising = styled(MainHeader)`
     writing-mode: vertical-rl;
     color: var(--yellow);
     position: relative;
-    right: 10px;
-    bottom: 10px;
 `
