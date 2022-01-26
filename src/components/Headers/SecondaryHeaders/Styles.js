@@ -8,20 +8,29 @@ export const SecondaryHeader = styled.h6`
     justify-content: center;
 `
 
-export const ClientsHeader = styled(SecondaryHeader)``
+export const ClientsHeader = styled(SecondaryHeader)`
+    font-size: 1rem;
+`
 
 export const WelcomeTo = styled(SecondaryHeader)`
     position: relative;
     top: 40px;
 `
 export const RestartAlphabet = styled(SecondaryHeader)`
-    font-size: 1rem !important;
+    font-size: 1rem;
 `
 export const WeAreGenZ = styled(SecondaryHeader)`
-    font-size: 2rem !important;
+    font-size: 2rem;
     color: var(--mustard) !important;
     text-transform: none;
     font-weight: 700;
 `
 
-export const HereAsA = styled(SecondaryHeader)``
+export const HereAsA = styled(SecondaryHeader)`
+    font-size: 1rem;
+`
+
+export const NewsLetterHeader = styled(SecondaryHeader)`
+    font-size: 1.5rem;
+    text-transform: capitalize;
+`

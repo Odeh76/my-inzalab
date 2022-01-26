@@ -8,6 +8,6 @@ export const LearnMoreBtn = styled(ResetDefaultButtonStyles)`
     background-color: var(--yellow);
     width: 400px;
     height: 90px;
-    font-family: var(--lato) !important;
-    text-transform: uppercase !important;
+    font-family: var(--lato);
+    text-transform: uppercase;
 `

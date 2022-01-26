@@ -41,9 +41,9 @@ export const NavLink = styled(Link)`
     color: var(--blackMain);
     cursor: pointer;
     letter-spacing: 0.05rem;
-    font-weight: 900;
     padding-top: 16px;
     margin: 0 16px;
+    font-weight: 900;
 
     @media only screen and (max-width: 48em) {
         align-items: flex-start;

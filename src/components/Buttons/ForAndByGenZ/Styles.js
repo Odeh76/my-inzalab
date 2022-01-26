@@ -4,12 +4,12 @@ import { ResetDefaultButtonStyles } from "../ResetDefaultButtonStyles/Styles";
 
 
 export const WhatIsInzaLab = styled(ResetDefaultButtonStyles)`
-    font-family: var(--lato) !important;
+    font-family: var(--lato);
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #000000;
-    text-transform: uppercase !important;
+    text-transform: uppercase;
     font-weight: 900;
     width: 450px;
     height: 80px;

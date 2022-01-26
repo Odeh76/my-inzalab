@@ -35,5 +35,6 @@ export const PlayText = styled.div`
 `
 
 
-export const VideoContainer = styled(LayoutContainer)`
+export const VideoContainer = styled.div`
+    width: 100%;
 `

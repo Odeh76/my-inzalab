@@ -1,7 +1,8 @@
 import React from 'react'
 import { Navbar } from '..'
 import { GlobalStyles } from '../../theme/GlobalStyles'
-import { Div, Main, Footer } from './Styles'
+import Footer from '../Footer'
+import { Div, Main } from './Styles'
 
 
 

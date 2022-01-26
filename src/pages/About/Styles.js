@@ -14,38 +14,43 @@ export const AdvertisingWord = styled.div`
   font-size: 3.5rem;
   font-weight: 900;
   text-transform: uppercase;
-  margin-left: -12px;
   letter-spacing: 0.4rem;
-  margin-top: 72px;
+  top: 90px;
+  margin-left: -12px;
 `
 
 
 export const AboutContainer = styled.div`
   width: 100%;
   min-height: 100vh;
-  margin-left: 4em;
   position: relative;
 `
 
-export const Authentic = styled(MainHeader)`
+export const Authentic = styled.h1`
+  font-size: 3.5rem;
+  font-family: var(--lato);
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: 900;
   position: relative;
-  top: 16px;
 `
 
 export const AboutImage = styled.img`
   background-image: url(${aboutImage});
   width: 100%;
-  height: 300px;
+  height: 350px;
   background-repeat: no-repeat;
   background-position: center center;
-`
-
-export const AboutImage2  = styled.img`
+  background-size: cover;
+  `
+  
+  export const AboutImage2  = styled.img`
   background-image: url(${aboutImage2});
   width: 100%;
-  height: 300px;
+  height: 350px;
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
 `
 
 
@@ -68,6 +73,7 @@ justify-items: center;
 list-style: none;
 gap: 1rem;
 width: 100%;
+min-height: 75vh;
 div {
   font-size: 5rem;
   padding: 1rem;
@@ -186,8 +192,19 @@ export const BrandButton = styled(OptionButton)`
 export const InnerImageContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  left: 0;
   height: 100%;
   width: 50%;
+  gap: 1rem;
+
+  // Mobile max-width: 640px
+@media only screen and (max-width: 40em) { 
+  width: 100%;
+  position: relative;
+
+} 
   
 `
 
@@ -217,7 +234,6 @@ export const Typography2 = styled(Typography)`
   right: 0;
   top: 0;
   height: 100%;
-  margin-top: 84px;
   width: 50%;
 
   // Mobile max-width: 640px
@@ -231,7 +247,7 @@ export const Typography2 = styled(Typography)`
 export const YellowRectangle = styled.div`
 -webkit-clip-path: polygon(46% 0, 100% 0%, 59% 100%, 0% 100%);
 clip-path: polygon(46% 0, 100% 0%, 59% 100%, 0% 100%);
-height: 728px;
+height: 100%;
 width: 350px;
 position: absolute;
 background-color: var(--yellow);
@@ -239,6 +255,7 @@ top: 0;
 right: 0;
 margin-right: 64px;
 transform: skew(-25deg);
+opacity: 0.9;
 transform-origin: 0 0;
 `
 

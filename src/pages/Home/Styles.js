@@ -39,11 +39,10 @@ export const HomeImage = styled.div`
 
 export const Logo = styled.div`
     background-image: url(${inzalab});
-    width: 100%;
-    height: 150px;
+    width: 550px;
+    height: 250px;
     position: absolute;
     background-repeat: no-repeat;
-    background-position: center center;
-    margin-left: 110px;
+    margin-left: 220px;
     margin-top: -80px;
 `

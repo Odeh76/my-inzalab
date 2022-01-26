@@ -1,9 +1,16 @@
 import styled from "styled-components"
-import { LearnMoreBtn } from "../../components/Buttons/LearnMore/Styles";
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles';
+import twentyFiveMainImage from '../../assets/img/boyWithGlasses.png'
 
-
-
+export const TwentyFiveMainImage = styled.img`
+  display: block;
+  background-image: url(${twentyFiveMainImage});
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 45%;
+  height: 626px;
+  background-size: cover;
+`
 
 export const TwentyFiveContainer = styled.div`
   width: 100%;
