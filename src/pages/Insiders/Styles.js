@@ -11,6 +11,7 @@ export const Description = styled.div`
 
 export const InsidersContainer = styled.div`
     width: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +39,7 @@ export const InsidersInnerContainer = styled.div`
     justify-content: space-between;
     position: relative;
     width: 40%;
-    height: 600px;
+    height: 626px;
 
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) { 

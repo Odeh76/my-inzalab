@@ -14,6 +14,7 @@ export const TwentyFiveMainImage = styled.img`
 
 export const TwentyFiveContainer = styled.div`
   width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +41,7 @@ flex-direction: column;
 justify-content: space-between;
 position: relative;
 width: 40%;
-height: 600px;
+height: 626px;
 
 // Mobile max-width: 640px
 @media only screen and (max-width: 40em) { 

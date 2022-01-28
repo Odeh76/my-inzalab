@@ -16,9 +16,11 @@ background-size: cover;
 
 export const ProgramsContainer = styled.div`
     width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    background-color: green;
     align-items: center;
     position: relative;
     gap: 64px;
@@ -43,7 +45,7 @@ export const InnerProgramsContainer = styled.div`
     justify-content: space-between;
     position: relative;
     width: 40%;
-    height: 600px;
+    height: 626px;
 
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) { 

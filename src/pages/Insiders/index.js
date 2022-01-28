@@ -7,14 +7,16 @@ import { Description, InsidersContainer, InsidersHeader, InsidersInnerContainer,
 
 function Insiders () {
     return (
-        <InsidersContainer>
+        <>
             <InsidersHeader>Insiders</InsidersHeader>
+        <InsidersContainer>
             <InsidersInnerContainer>
                 <Description>Insider Trends Officers provide insights about the media consumption habits of Gen Z-ers to drive research into marketing and advertising for a younger audience.</Description>
                 <LearnMoreBtn>Learn More</LearnMoreBtn>
             </InsidersInnerContainer>
             <InsidersMainImage />
         </InsidersContainer>
+        </>
     )
 }
 

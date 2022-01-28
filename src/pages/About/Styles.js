@@ -38,10 +38,11 @@ export const Authentic = styled.h1`
 export const AboutImage = styled.img`
   background-image: url(${aboutImage});
   width: 100%;
-  height: 350px;
+  height: 300px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  margin-top: -48px;
   `
   
   export const AboutImage2  = styled.img`
@@ -195,7 +196,9 @@ export const InnerImageContainer = styled.div`
   align-items: flex-start;
   position: absolute;
   left: 0;
+  top: 0;
   height: 100%;
+  margin-top: -48px;
   width: 50%;
   gap: 1rem;
 
@@ -247,13 +250,12 @@ export const Typography2 = styled(Typography)`
 export const YellowRectangle = styled.div`
 -webkit-clip-path: polygon(46% 0, 100% 0%, 59% 100%, 0% 100%);
 clip-path: polygon(46% 0, 100% 0%, 59% 100%, 0% 100%);
-height: 100%;
+height: 822.8px;
 width: 350px;
 position: absolute;
 background-color: var(--yellow);
 top: 0;
 right: 0;
-margin-right: 64px;
 transform: skew(-25deg);
 opacity: 0.9;
 transform-origin: 0 0;

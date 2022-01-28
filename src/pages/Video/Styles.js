@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { LayoutContainer } from '../../components/Container/Styles'
 import { FaRegPlayCircle, FaArrowDown, FaLevelUpAlt } from 'react-icons/fa'
 
 
@@ -37,4 +36,9 @@ export const PlayText = styled.div`
 
 export const VideoContainer = styled.div`
     width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `

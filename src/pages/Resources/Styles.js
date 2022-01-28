@@ -4,6 +4,7 @@ import resourcesPhoneImage from '../../assets/img/resourcesPhoneImage.png'
 
 export const ResourcesContainer = styled.div`
     width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
