@@ -17,7 +17,6 @@ export const InsidersContainer = styled.div`
     align-items: center;
     position: relative;
     gap: 64px;
-    margin-bottom: 64px;
     min-height: 100vh;
 
     // Mobile max-width: 640px
@@ -30,7 +29,7 @@ export const InsidersHeader = styled(MainHeader)`
 position: absolute;
 transform: rotate(-90deg);
 left: 0;
-height: 530px;
+height: 520px;
 `
 
 export const InsidersInnerContainer = styled.div`

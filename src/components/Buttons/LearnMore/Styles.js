@@ -6,7 +6,7 @@ import { ResetDefaultButtonStyles } from "../ResetDefaultButtonStyles/Styles";
 
 export const LearnMoreBtn = styled(ResetDefaultButtonStyles)`
     background-color: var(--yellow);
-    width: 400px;
+    width: 100%;
     height: 90px;
     font-family: var(--lato);
     text-transform: uppercase;

@@ -7,9 +7,9 @@ export const TwentyFiveMainImage = styled.img`
   background-image: url(${twentyFiveMainImage});
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   width: 45%;
   height: 626px;
-  background-size: cover;
 `
 
 export const TwentyFiveContainer = styled.div`
@@ -32,7 +32,7 @@ export const TwentyFiveHeader = styled(MainHeader)`
 position: absolute;
 transform: rotate(-90deg);
 left: 0;
-height: 720px;
+height: 620px;
 `
 
 export const InnerTwentyFiveContainer = styled.div`

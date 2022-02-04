@@ -37,7 +37,7 @@ export const Authentic = styled.h1`
 
 export const AboutImage = styled.img`
   background-image: url(${aboutImage});
-  width: 100%;
+  width: 90%;
   height: 300px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -47,7 +47,7 @@ export const AboutImage = styled.img`
   
   export const AboutImage2  = styled.img`
   background-image: url(${aboutImage2});
-  width: 100%;
+  width: 90%;
   height: 350px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -250,7 +250,7 @@ export const Typography2 = styled(Typography)`
 export const YellowRectangle = styled.div`
 -webkit-clip-path: polygon(46% 0, 100% 0%, 59% 100%, 0% 100%);
 clip-path: polygon(46% 0, 100% 0%, 59% 100%, 0% 100%);
-height: 822.8px;
+height: 100%;
 width: 350px;
 position: absolute;
 background-color: var(--yellow);

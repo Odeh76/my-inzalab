@@ -1,5 +1,5 @@
 import React from 'react'
-import { ResourcesDescription, ResourcesHeader, ResourcesContainer, ImageContainer, ResourcesImages } from './Styles'
+import { ResourcesDescription, ResourcesHeader, ResourcesContainer, ImageContainer, ResourcesImages, ResourcesLinksContainer, ResourcesLinks } from './Styles'
 
 function Resources () {
     return (
@@ -11,6 +11,11 @@ function Resources () {
                 <ResourcesImages />
                 <ResourcesImages />
             </ImageContainer>
+            <ResourcesLinksContainer>
+                <ResourcesLinks>2020 Gen Z Consumer Insights</ResourcesLinks>
+                <ResourcesLinks>"pharetra massa massa ultricies mi quis hender..."</ResourcesLinks>
+                <ResourcesLinks>How does Gen Z feel about the TikTok Ban?</ResourcesLinks>
+            </ResourcesLinksContainer>
         </ResourcesContainer>
         </>
     )

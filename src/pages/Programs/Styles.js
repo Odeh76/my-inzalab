@@ -20,11 +20,9 @@ export const ProgramsContainer = styled.div`
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    background-color: green;
     align-items: center;
     position: relative;
     gap: 64px;
-    margin-bottom: 64px;
 
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) { 
@@ -36,7 +34,7 @@ export const ProgramsHeader = styled(MainHeader)`
 position: absolute;
 transform: rotate(90deg);
 right: 0;
-height: 720px;
+height: 620px;
 `
 
 export const InnerProgramsContainer = styled.div`

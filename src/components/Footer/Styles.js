@@ -10,7 +10,7 @@ import { NewsLetterHeader } from '../Headers/SecondaryHeaders/Styles'
 export const FooterContainer = styled.div`
     width: 100%;
     position: relative;
-    min-height: 80vh;
+    min-height: 95vh;
 `
 
 export const FooterLink = styled(Link)`

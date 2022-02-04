@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const MainHeader = styled.h1`
     color: ${props => props.theme.color};
     font-family: var(--lato);
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1rem;

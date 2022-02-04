@@ -22,15 +22,15 @@ export const WhatIsInzaLab = styled(ResetDefaultButtonStyles)`
 `
 
 export const ForAndByGenZ = styled(ResetDefaultButtonStyles)`
-    font-family: var(--lato) !important;
+    font-family: var(--lato);
+    display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #000000;
-    display: flex;
     justify-content: flex-start;
     width: 540px;
     height: 80px;
-    margin-left: -60px !important;
+    margin-left: -60px;
     
     span {
         text-transform: uppercase;

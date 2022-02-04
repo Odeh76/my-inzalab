@@ -7,8 +7,8 @@ import { Description, InnerProgramsContainer, ProgramsContainer, ProgramsHeader,
 function Programs () {
     return (
         <>
-        <ProgramsHeader>Programs</ProgramsHeader>
         <ProgramsContainer>
+        {/* <ProgramsHeader>Programs</ProgramsHeader> */}
         <InnerProgramsContainer>
             <Description>Not limited by industry or skill level, we showcase 25 talented Gen Zers each year with the intent of creating cross-boundary relationships and partnerships. </Description>
             <LearnMoreBtn>Learn More</LearnMoreBtn>

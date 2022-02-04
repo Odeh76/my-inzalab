@@ -11,8 +11,6 @@ function About() {
     return (
         <>
         <AboutContainer>
-        <YellowRectangle />
-
             <InnerImageContainer>
             <Authentic>Authentic</Authentic>
             <AdvertisingWord>Dvertisin</AdvertisingWord>
@@ -21,6 +19,7 @@ function About() {
             <ForAndByGenZ><div>For & By</div><span>GenZ</span></ForAndByGenZ>
             </InnerImageContainer>
             <InnerAboutContainer>
+        <YellowRectangle />
             <WhatIsInzaLab><div>What is Inza Lab?</div></WhatIsInzaLab>
             <Typography>
                 InZa Lab is a Gen Z talent program created by Creative Digital Agency (CDA). In order to keep up with rapid changes in generational trends, we provide a platform for the Generation Z members to showcase creativity, insights and talents.
@@ -37,7 +36,6 @@ function About() {
         </ButtonContainer>
         <ClientsHeader>Clients</ClientsHeader>
         <ClientsList>
-        <YellowRectangleClients />
             <div><FaRing /></div>
             <div><FaCrow /></div>
             <div><FaCodeBranch /></div>

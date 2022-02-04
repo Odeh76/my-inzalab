@@ -27,6 +27,27 @@ export const ImageContainer = styled.div`
     max-height: 50vh;
 `
 
+export const ResourcesLinks = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid var(--blackMain);
+    width: 100%;
+    height: 96px;
+    font-family: var(--lato);
+    font-size: 1.5rem;
+    background: none;
+    font-weight: 500;
+`
+export const ResourcesLinksContainer = styled.div`
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    margin-top: 64px;
+`
+
 export const ResourcesImages = styled.img`
     width: 100%;
     height: 400px;

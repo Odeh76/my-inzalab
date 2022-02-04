@@ -1,28 +1,46 @@
 import styled from "styled-components"
 import { Link } from 'react-router-dom'
-import {FaBars, FaTimes} from 'react-icons/fa'
+import {FaBars, FaTimes, FaUserCircle} from 'react-icons/fa'
+import navbarLogoLink from '../../assets/img/navbarLogoLink.svg'
+
+export const UserCircle = styled(FaUserCircle)`
+display: block;
+width: 60px;
+height: 60px;
+padding-top: 16px;
+margin: 0 16px;
+`
+
 
 export const Bars = styled(FaBars)`
-    font-size: 2rem;
-    display: ${({openMenu}) => openMenu ? 'none' : 'block'};
-
+display: ${({openMenu}) => openMenu ? 'none' : 'block'};
+width: 60px;
+height: 60px;
+padding-top: 16px;
+cursor: pointer;
+margin: 0 16px;
 `
 
 export const CloseButton = styled(FaTimes)`
-    font-size: 2rem;
-    display: ${({openMenu}) => openMenu ? 'none' : 'block'};
-
+    height: 60px;
+    width: 60px;
+    display: ${({openMenu}) => openMenu ? 'block' : 'none'};
+    padding-top: 16px;
+    margin: 0 16px;
 `
 
 
 
 export const Sidebar = styled.nav`
-    display: ${({open}) => open ? 'none' : 'block'};
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
     position: fixed;
     left: 0;
     z-index: 5;
     background-color: var(--whiteMain);
+    width: 225px;
 
     @media only screen and (max-width: 48em) {
         width: 100%;
@@ -31,9 +49,19 @@ export const Sidebar = styled.nav`
     } 
 `
 
+export const NavbarLogo = styled(Link)`
+display: ${({openMenu}) => openMenu ? 'none' : 'block'};
+    background: url(${navbarLogoLink});
+    height: 80px;
+    width: 64px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 16px;
+`
+
 export const NavLink = styled(Link)`
-    display: flex;
-    justify-content: center;
+    display: ${({openMenu}) => openMenu ? 'block' : 'none'};
     font-family: var(--lato);
     text-decoration: none;
     text-transform: uppercase;

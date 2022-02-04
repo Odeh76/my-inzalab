@@ -4,20 +4,26 @@ import { FaRegPlayCircle, FaArrowDown, FaLevelUpAlt } from 'react-icons/fa'
 
 export const ArrowDown = styled(FaArrowDown)`
     font-size: 4rem;
+    width: 32px;
+    height: 32px;
+
+    // Mobile 640px
+    @media only screen and (max-width: 40em) {
+        display: none;
+    }
 `
 
 export const IconContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 32px;
+    background-color: green;
 `
 export const LevelUpArrow = styled(FaLevelUpAlt)`
     font-size: 4rem;
     position: absolute;
     right: 0;
     margin-right: 64px;
-    margin-bottom: 16px;
 `
 
 export const PlayIcon = styled(FaRegPlayCircle)``
@@ -36,9 +42,10 @@ export const PlayText = styled.div`
 
 export const VideoContainer = styled.div`
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
 `

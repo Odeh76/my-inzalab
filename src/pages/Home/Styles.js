@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import inzalabLogoDesktop from '../../assets/img/inzalabLogoDesktop.png'
-import inzalab from '../../assets/img/inzaLab.png'
+import inzalab from '../../assets/img/inzaLab.svg'
 
 export const AboutContainer = styled.div`
     width: 100%;
@@ -19,7 +19,6 @@ export const InnerImageContainer = styled.div`
 export const HomeContainer = styled.div`
     width: 100%;
     height: 100vh;
-    max-width: 960px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -43,6 +42,10 @@ export const Logo = styled.div`
     height: 250px;
     position: absolute;
     background-repeat: no-repeat;
-    margin-left: 220px;
-    margin-top: -80px;
+    background-position: center center;
+    object-fit: cover;
+    margin-top: -220px;
+    margin-left: 96px;
+
+
 `
