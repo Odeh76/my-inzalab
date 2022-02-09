@@ -1,13 +1,14 @@
 import styled from 'styled-components'
 import inzalabLogoDesktop from '../../assets/img/inzalabLogoDesktop.png'
+import inzalabLogoMobile from '../../assets/img/inzalabLogoMobile.svg'
 import inzalab from '../../assets/img/inzaLab.svg'
+import inzalabMobile from '../../assets/img/inzalabMobile.svg'
 
 export const AboutContainer = styled.div`
     width: 100%;
     min-height: 100vh;
     max-width: 960px;
     position: relative;
-    background-color: green;
 `
 
 export const InnerImageContainer = styled.div`
@@ -30,10 +31,15 @@ export const HomeContainer = styled.div`
 export const HomeImage = styled.div`
     background-image: url(${inzalabLogoDesktop});
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     border: 0;
+
+    // Mobile max-width: 640px
+    @media only screen and (max-width: 40em) {
+        background-image: url(${inzalabLogoMobile});
+    }
 `
 
 export const Logo = styled.div`
@@ -46,6 +52,13 @@ export const Logo = styled.div`
     object-fit: cover;
     margin-top: -220px;
     margin-left: 96px;
+
+    // Mobile max-width: 640px
+    @media only screen and (max-width: 40em) {
+        background-image: url(${inzalabMobile});
+        margin-left: 64px;
+        width: 300px;
+    }
 
 
 `

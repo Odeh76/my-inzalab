@@ -11,14 +11,17 @@ export const WhatIsInzaLab = styled(ResetDefaultButtonStyles)`
     border: 1px solid #000000;
     text-transform: uppercase;
     font-weight: 900;
-    width: 450px;
+    width: 100%;
     height: 80px;
     position: relative;
     z-index: 3;
 
-    div {
-        margin-left: 60px;
-    }
+   // Mobile max-width: 640px
+  @media only screen and (max-width: 40em) { 
+    height: 64px;
+  }
+
+    
 `
 
 export const ForAndByGenZ = styled(ResetDefaultButtonStyles)`
@@ -28,7 +31,7 @@ export const ForAndByGenZ = styled(ResetDefaultButtonStyles)`
     align-items: center;
     border: 1px solid #000000;
     justify-content: flex-start;
-    width: 540px;
+    width: 100%;
     height: 80px;
     margin-left: -60px;
     
@@ -45,4 +48,10 @@ export const ForAndByGenZ = styled(ResetDefaultButtonStyles)`
         font-size: 1.5rem;
         font-weight: 600;
     }
+
+    // Mobile max-width: 640px
+    @media only screen and (max-width: 40em) { 
+        width: 320px;
+        margin: 0;
+    } 
 `

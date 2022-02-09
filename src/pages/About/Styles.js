@@ -17,6 +17,13 @@ export const AdvertisingWord = styled.div`
   letter-spacing: 0.4rem;
   top: 90px;
   margin-left: -12px;
+
+  // Mobile max-width: 640px
+  @media only screen and (max-width: 40em) { 
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    margin: 0;
+  }
 `
 
 
@@ -33,25 +40,42 @@ export const Authentic = styled.h1`
   letter-spacing: 1rem;
   font-weight: 900;
   position: relative;
+
+  // Mobile max-width: 640px
+  @media only screen and (max-width: 40em) { 
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+  }
 `
 
 export const AboutImage = styled.img`
   background-image: url(${aboutImage});
-  width: 90%;
+  width: 100%;
   height: 300px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   margin-top: -48px;
+
+  // Mobile max-width: 640px
+  @media only screen and (max-width: 40em) { 
+    height: 200px;
+  }
   `
   
   export const AboutImage2  = styled.img`
   background-image: url(${aboutImage2});
-  width: 90%;
+  width: 100%;
   height: 350px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+
+  
+  // Mobile max-width: 640px
+  @media only screen and (max-width: 40em) { 
+    height: 200px;
+  }
 `
 
 
@@ -73,12 +97,16 @@ align-items: center;
 justify-items: center;
 list-style: none;
 gap: 1rem;
-width: 100%;
-min-height: 75vh;
 div {
   font-size: 5rem;
-  padding: 1rem;
 }
+
+// Mobile max-width: 640px
+@media only screen and (max-width: 40em) { 
+  div {
+    font-size: 2rem;
+  }
+} 
 `
 
 export const OptionButton = styled.button`
@@ -218,14 +246,20 @@ export const Typography = styled.div`
     width: 280px;
     text-align: left;
     font-size: 1.5rem;
-    margin-top: 32px;
+    margin-bottom: 32px;
     position: relative;
     z-index: 3;
+
+    // Mobile max-width: 640px
+    @media only screen and (max-width: 40em) { 
+      width: 100%;
+      text-align: justify;
+    }
 `
 
 
 export const Typography2 = styled(Typography)`
-  font-size: 1rem;
+  font-size: 1.2rem;
 `
 
   
@@ -235,14 +269,16 @@ export const Typography2 = styled(Typography)`
   align-items: flex-end;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 60px;
   height: 100%;
+  max-height: 600px;
   width: 50%;
 
   // Mobile max-width: 640px
 @media only screen and (max-width: 40em) { 
-  width: 100%;
   position: relative;
+  width: 100%;
+  align-items: center;
 
 } 
 `
