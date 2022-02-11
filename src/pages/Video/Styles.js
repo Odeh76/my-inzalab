@@ -17,13 +17,12 @@ export const IconContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    margin-top: 64px;
 `
 export const LevelUpArrow = styled(FaLevelUpAlt)`
     font-size: 4rem;
     position: absolute;
-    right: 0;
-    margin-right: 64px;
+    right: 40px;
 `
 
 export const PlayIcon = styled(FaRegPlayCircle)``
@@ -32,8 +31,7 @@ export const PlayText = styled.div`
     font-family: var(--lato);
     font-size: 4rem;
     position: absolute;
-    right: 0;
-    margin-right: 128px;
+    right: 90px;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 1rem;

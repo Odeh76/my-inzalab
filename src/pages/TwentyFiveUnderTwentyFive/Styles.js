@@ -26,7 +26,6 @@ export const TwentyFiveContainer = styled.div`
   align-items: center;
   position: relative;
   gap: 64px;
-  margin-bottom: 64px;
 
   // Mobile max-width: 640px
 @media only screen and (max-width: 40em) {

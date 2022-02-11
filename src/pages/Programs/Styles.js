@@ -12,6 +12,12 @@ background-repeat: no-repeat;
 width: 45%;
 height: 626px;
 background-size: cover;
+
+// Mobile max-width: 640px
+@media only screen and (max-width: 40em) { 
+  width: 90%;
+  height: 500px;
+} 
 `
 
 export const ProgramsContainer = styled.div`
@@ -25,9 +31,10 @@ export const ProgramsContainer = styled.div`
     gap: 64px;
 
     // Mobile max-width: 640px
-    @media only screen and (max-width: 40em) { 
-    flex-direction: column;
-    } 
+@media only screen and (max-width: 40em) {
+  flex-direction: column-reverse;
+  align-items: flex-end;
+} 
 `
 
 export const ProgramsHeader = styled(MainHeader)`
@@ -35,6 +42,13 @@ position: absolute;
 transform: rotate(90deg);
 right: 0;
 height: 620px;
+
+// Mobile max-width: 640px
+@media only screen and (max-width: 40em) { 
+  height: 320px;
+  margin-left: 24px;
+  top: 0;
+} 
 `
 
 export const InnerProgramsContainer = styled.div`
@@ -47,11 +61,17 @@ export const InnerProgramsContainer = styled.div`
 
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) { 
-
+      width: 90%;
+      height: auto;
     } 
 `
 
 export const Description = styled.div`
 font-family: var(--lato);
 width: 100%;
+
+// Mobile max-width: 640px
+  @media only screen and (max-width: 40em) { 
+    margin-bottom: 32px;
+  } 
 `

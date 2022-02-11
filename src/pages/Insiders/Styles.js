@@ -6,6 +6,11 @@ import insidersMainImage from '../../assets/img/insidersMainImage.png'
 export const Description = styled.div`
     font-family: var(--lato);
     width: 100%;
+
+    // Mobile max-width: 640px
+  @media only screen and (max-width: 40em) { 
+    margin-bottom: 32px;
+  } 
 `
 
 
@@ -17,12 +22,12 @@ export const InsidersContainer = styled.div`
     align-items: center;
     position: relative;
     gap: 64px;
-    min-height: 100vh;
 
     // Mobile max-width: 640px
-    @media only screen and (max-width: 40em) { 
-    flex-direction: column;
-    } 
+    @media only screen and (max-width: 40em) {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
 `
 
 export const InsidersHeader = styled(MainHeader)`
@@ -30,9 +35,16 @@ position: absolute;
 transform: rotate(-90deg);
 left: 0;
 height: 520px;
+
+// Mobile max-width: 640px
+@media only screen and (max-width: 40em) { 
+  height: 260px;
+  margin-left: 24px;
+  top: 0;
+} 
 `
 
-export const InsidersInnerContainer = styled.div`
+export const InnerInsidersContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,7 +54,8 @@ export const InsidersInnerContainer = styled.div`
 
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) { 
-
+        width: 90%;
+        height: auto;
     } 
 `
 
@@ -54,4 +67,10 @@ export const InsidersMainImage = styled.img`
     width: 45%;
     height: 626px;
     background-size: cover;
+
+    // Mobile max-width: 640px
+    @media only screen and (max-width: 40em) { 
+      width: 90%;
+      height: 500px;
+    } 
 `

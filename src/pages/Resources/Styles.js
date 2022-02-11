@@ -23,6 +23,12 @@ export const ImageContainer = styled.div`
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 16px;
+
+    // Mobile max-width: 640px
+    @media only screen and (max-width: 40em) { 
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 16px;
+    } 
 `
 
 export const ResourcesLinks = styled.button`
@@ -44,6 +50,11 @@ export const ResourcesLinksContainer = styled.div`
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     margin-top: 32px;
+
+    // Mobile max-width: 640px
+    @media only screen and (max-width: 40em) { 
+      grid-template-columns: repeat(1, 1fr);
+    } 
 `
 
 export const ResourcesImages = styled.img`
