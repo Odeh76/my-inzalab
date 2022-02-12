@@ -4,17 +4,7 @@ import inzalabLogoMobile from '../../assets/img/inzalabLogoMobile.svg'
 import inzalab from '../../assets/img/inzaLab.svg'
 import inzalabMobile from '../../assets/img/inzalabMobile.svg'
 
-export const AboutContainer = styled.div`
-    width: 100%;
-    min-height: 100vh;
-    max-width: 960px;
-    position: relative;
-`
 
-export const InnerImageContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-`
 
 
 export const HomeContainer = styled.div`
@@ -56,6 +46,7 @@ export const Logo = styled.div`
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) {
         background-image: url(${inzalabMobile});
+        margin: 0;
         margin-left: 64px;
         width: 300px;
     }
