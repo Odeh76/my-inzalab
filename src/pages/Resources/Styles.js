@@ -61,6 +61,10 @@ export const ResourcesImages = styled.img`
     width: 100%;
     height: 400px;
     background-image: url(${resourcesPhoneImage});
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 `
 

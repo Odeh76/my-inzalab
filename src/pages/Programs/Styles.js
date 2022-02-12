@@ -33,7 +33,7 @@ export const ProgramsContainer = styled.div`
     // Mobile max-width: 640px
 @media only screen and (max-width: 40em) {
   flex-direction: column-reverse;
-  align-items: flex-end;
+  align-items: flex-start;
 } 
 `
 
@@ -45,9 +45,10 @@ height: 620px;
 
 // Mobile max-width: 640px
 @media only screen and (max-width: 40em) { 
-  height: 320px;
   margin-left: 24px;
   top: 0;
+  font-size: 4rem;
+  height: 450px;
 } 
 `
 

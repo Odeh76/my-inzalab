@@ -40,11 +40,14 @@ transform: rotate(-90deg);
 left: 0;
 height: 620px;
 
+
 // Mobile max-width: 640px
 @media only screen and (max-width: 40em) { 
-  height: 300px;
   margin-left: 24px;
   top: 0;
+  font-size: 4rem;
+  height: 540px;
+  min-width: 450px;
 } 
 `
 
