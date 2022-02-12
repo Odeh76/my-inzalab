@@ -47,8 +47,7 @@ height: 620px;
 @media only screen and (max-width: 40em) { 
   margin-left: 24px;
   top: 0;
-  font-size: 4rem;
-  height: 450px;
+  height: auto;
 } 
 `
 
