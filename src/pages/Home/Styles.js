@@ -34,20 +34,19 @@ export const HomeImage = styled.div`
 
 export const Logo = styled.div`
     background-image: url(${inzalab});
-    width: 550px;
-    height: 250px;
+    width: 90%;
+    height: 100%;
     position: absolute;
     background-repeat: no-repeat;
     background-position: center center;
     object-fit: cover;
     margin-top: -220px;
-    margin-left: 96px;
+    margin-left: 104px;
 
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) {
         background-image: url(${inzalabMobile});
         margin-left: 64px;
-        width: 300px;
     }
 
 
