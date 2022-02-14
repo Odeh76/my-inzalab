@@ -47,8 +47,8 @@ export const Logo = styled.div`
         width: 300px;
         height: 60px;
         background-image: url(${inzalabMobile});
-        margin-left: 64px;
-        margin-top: -220px;
+        margin-left: 48px;
+        margin-top: -120px;
     }
 
 
