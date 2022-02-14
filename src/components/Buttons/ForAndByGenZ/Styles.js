@@ -11,7 +11,7 @@ export const WhatIsInzaLab = styled(ResetDefaultButtonStyles)`
     border: 1px solid #000000;
     text-transform: uppercase;
     font-weight: 900;
-    width: 100%;
+    width: 90%;
     height: 80px;
     position: relative;
     z-index: 3;
