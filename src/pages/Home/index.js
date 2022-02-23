@@ -7,6 +7,7 @@ import TwentyFiveUnderTwentyFive from '../TwentyFiveUnderTwentyFive'
 import Programs from '../Programs'
 import Resources from '../Resources'
 import Insiders from '../Insiders'
+import { Layout } from '../../components'
 // import Posts from '../../components/Posts'
 
 
@@ -16,21 +17,21 @@ import Insiders from '../Insiders'
 
 function Home() {
     return (
-        <>
-        <HomeContainer>
-            <WelcomeTo>Welcome to</WelcomeTo>
-            <Logo />
-            <HomeImage />
-            <WeAreGenZ>We're Gen Z.</WeAreGenZ>
-            <RestartAlphabet>Let's restart the alphabet</RestartAlphabet>
-        </HomeContainer>
+        <Layout>
+            <HomeContainer>
+                <WelcomeTo>Welcome to</WelcomeTo>
+                <Logo />
+                <HomeImage />
+                <WeAreGenZ>We're Gen Z.</WeAreGenZ>
+                <RestartAlphabet>Let's restart the alphabet</RestartAlphabet>
+            </HomeContainer>
             <Video />
             <About />
             <TwentyFiveUnderTwentyFive />
             <Programs />
             <Resources />
             <Insiders />
-        </>
+        </Layout>
     )
 }
 

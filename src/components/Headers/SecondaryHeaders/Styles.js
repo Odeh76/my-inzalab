@@ -17,6 +17,8 @@ export const WelcomeTo = styled(SecondaryHeader)`
 `
 export const RestartAlphabet = styled(SecondaryHeader)`
     font-size: 1rem;
+    position: absolute;
+    bottom: 0;
 `
 export const WeAreGenZ = styled(SecondaryHeader)`
     font-size: 2rem;

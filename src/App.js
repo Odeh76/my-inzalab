@@ -1,16 +1,17 @@
-import Home from "./pages/Home";
 import { Layout } from "./components";
-import { BrowserRouter as Router } from "react-router-dom";
+import ApplicationRouter from "./components/Routes";
+import Home from "./pages/Home";
 
 
 
 function App() {
   return (
-      <Router>
+      <ApplicationRouter>
         <Layout>
-          <Home />
+        <Home />
         </Layout>
-      </Router>
+      </ApplicationRouter>
+          
   );
 }
 

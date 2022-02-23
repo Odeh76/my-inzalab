@@ -18,9 +18,3 @@ export const MainHeader = styled.h1`
 `
 export const Authentic = styled(MainHeader)`
 `
-export const Advertising = styled(MainHeader)`
-    text-orientation: upright;
-    writing-mode: vertical-rl;
-    color: var(--yellow);
-    position: relative;
-`

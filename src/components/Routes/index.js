@@ -1,25 +1,29 @@
 import React from 'react'
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from '../../pages/Home'
 import About from '../../pages/About';
 import Contact from '../../pages/Contact'
 import Programs from '../../pages/Programs'
 import Resources from '../../pages/Resources'
 import MeetTheITOs from '../../pages/MeetTheITOs'
+import TwentyFiveUnderTwentyFiveIP from '../../pages/TwentyFiveUnderTwentyFiveIP';
 
 
 
-function index() {
+function ApplicationRouter() {
     return (
-        <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/about" exact component={About} />
-            <Route path="/contact" exact component={Contact} />
-            <Route path="/meettheitos" exact component={MeetTheITOs} />
-            <Route path="/programs" exact component={Programs} />
-            <Route path="/resources" exact component={Resources} />
-        </Switch>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/meettheitos" element={<MeetTheITOs />} />
+                <Route path="/programs" element={<Programs />} />
+                <Route path="/resources" element={<Resources />} />
+                <Route path="/twentyfiveundertwentyfive" element={<TwentyFiveUnderTwentyFiveIP />} />
+            </Routes>
+        </BrowserRouter>
     )
 }
 
-export default index
+export default ApplicationRouter

@@ -11,12 +11,12 @@ export const AdvertisingWord = styled.div`
   text-orientation: upright;
   writing-mode: vertical-lr;
   color: var(--mustard);
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
-  top: 90px;
-  margin-left: -12px;
+  top: 80px;
+  margin-left: -10px;
 
   // Mobile max-width: 640px
   @media only screen and (max-width: 40em) { 
@@ -34,7 +34,7 @@ export const AboutContainer = styled.div`
 `
 
 export const Authentic = styled.h1`
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: var(--lato);
   text-transform: uppercase;
   letter-spacing: 1rem;
@@ -51,12 +51,12 @@ export const Authentic = styled.h1`
 export const AboutImage = styled.img`
   background-image: url(${aboutImage});
   width: 100%;
-  height: 300px;
+  min-height: 250px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   margin-top: -48px;
-
+  
   // Mobile max-width: 640px
   @media only screen and (max-width: 40em) { 
     height: 200px;
@@ -66,7 +66,7 @@ export const AboutImage = styled.img`
   export const AboutImage2  = styled.img`
   background-image: url(${aboutImage2});
   width: 100%;
-  height: 350px;
+  min-height: 250px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -225,7 +225,7 @@ export const InnerImageContainer = styled.div`
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
+  min-height: 100%;
   margin-top: -48px;
   width: 50%;
   gap: 1rem;
@@ -269,7 +269,7 @@ export const Typography2 = styled(Typography)`
   align-items: flex-end;
   position: absolute;
   right: 0;
-  top: 60px;
+  top: 42px;
   height: 100%;
   max-height: 600px;
   width: 50%;

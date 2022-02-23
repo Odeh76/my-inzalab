@@ -39,13 +39,13 @@ position: absolute;
 transform: rotate(-90deg);
 left: 0;
 height: 620px;
+font-size: 3rem;
 
 
 // Mobile max-width: 640px
 @media only screen and (max-width: 40em) { 
   margin-left: 24px;
   top: 0;
-  font-size: 4rem;
   height: 540px;
   min-width: 450px;
 } 

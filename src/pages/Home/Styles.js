@@ -9,7 +9,7 @@ import inzalabMobile from '../../assets/img/inzalabMobile.svg'
 
 export const HomeContainer = styled.div`
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ export const HomeContainer = styled.div`
 export const HomeImage = styled.div`
     background-image: url(${inzalabLogoDesktop});
     width: 100%;
-    height: 100%;
+    height: 340px;
     background-repeat: no-repeat;
     background-position: center center;
     border: 0;
@@ -39,16 +39,15 @@ export const Logo = styled.div`
     position: absolute;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-top: -220px;
-    margin-left: 96px;
+    margin-top: -140px;
+    margin-left: 104px;
     
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) {
         width: 300px;
         height: 60px;
         background-image: url(${inzalabMobile});
-        margin-left: 36px;
-        margin-top: -120px;
+        margin-left: 72px;
     }
 
 

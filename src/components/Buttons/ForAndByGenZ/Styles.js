@@ -8,7 +8,7 @@ export const WhatIsInzaLab = styled(ResetDefaultButtonStyles)`
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #000000;
+    border: 1px solid var(--blackMain);
     text-transform: uppercase;
     font-weight: 900;
     width: 90%;
@@ -31,13 +31,13 @@ export const ForAndByGenZ = styled(ResetDefaultButtonStyles)`
     align-items: center;
     border: 1px solid #000000;
     justify-content: flex-start;
-    width: 100%;
+    width: 112%;
     height: 80px;
-    margin-left: -12px;
-    
+    margin-left: -60px;
+    margin-top: 8px;
     span {
         text-transform: uppercase;
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-weight: 900;
         letter-spacing: 1rem;
     }

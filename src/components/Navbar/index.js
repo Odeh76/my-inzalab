@@ -3,6 +3,7 @@ import { Sidebar, NavLink, Bars, CloseButton, NavbarLogo, UserCircle  } from './
 
 
 
+
 function Navbar() {
 
     const [openMenu, setOpenMenu] = useState(false);
@@ -12,18 +13,20 @@ function Navbar() {
 
 
     return (
+        <>
         <Sidebar openMenu={openMenu}>
             <Bars onClick={handleClick} openMenu={openMenu} />
             <NavbarLogo openMenu={openMenu} to="/" />
             <CloseButton openMenu={openMenu} onClick={handleClick} />
             <NavLink openMenu={openMenu} to="/">Home</NavLink>
-            <NavLink openMenu={openMenu} to="/25under25">25 Under 25</NavLink>
+            <NavLink openMenu={openMenu} to="/twentyfiveundertwentyfive">25 Under 25</NavLink>
             <NavLink openMenu={openMenu} to="programs">Programs</NavLink>
             <NavLink openMenu={openMenu} to="resources">Resources</NavLink>
             <NavLink openMenu={openMenu} to="meettheitos">Meet The ITOs</NavLink>
             <NavLink openMenu={openMenu} to="contact">Contact</NavLink>
             <UserCircle openMenu={openMenu} />
         </Sidebar>
+        </>
     )
 }
 
