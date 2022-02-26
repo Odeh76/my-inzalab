@@ -6,7 +6,7 @@ import navbarLogoLink from '../../assets/img/navbarLogoLink.svg'
 export const UserCircle = styled(FaUserCircle)`
 display: block;
 width: 60px;
-height: 60px;
+min-height: 60px;
 padding-top: 16px;
 margin: 0 16px;
 `
@@ -15,14 +15,14 @@ margin: 0 16px;
 export const Bars = styled(FaBars)`
 display: ${({openMenu}) => openMenu ? 'none' : 'block'};
 width: 60px;
-height: 60px;
+min-height: 60px;
 padding-top: 16px;
 cursor: pointer;
 margin: 0 16px;
 `
 
 export const CloseButton = styled(FaTimes)`
-    height: 60px;
+    min-height: 60px;
     width: 60px;
     display: ${({openMenu}) => openMenu ? 'block' : 'none'};
     padding-top: 16px;
@@ -40,24 +40,32 @@ export const Sidebar = styled.nav`
     left: 0;
     z-index: 5;
     background-color: var(--whiteMain);
-    width: 225px;
+    width: ${({openMenu}) => openMenu ? '225px' : '100px'};
 
     @media only screen and (max-width: 48em) {
         width: 100%;
-        height: 50%;
+        height: ${({openMenu}) => openMenu ? '70%' : '84px'};
+        flex-direction: ${({openMenu}) => openMenu ? 'column' : 'row'};
         bottom: 0;
+        align-items: ${({openMenu}) => openMenu ? 'flex-start' : 'flex-end'};
+        
     } 
 `
 
 export const NavbarLogo = styled(Link)`
-display: ${({openMenu}) => openMenu ? 'none' : 'block'};
+    display: ${({openMenu}) => openMenu ? 'none' : 'block'};
     background: url(${navbarLogoLink});
-    height: 80px;
+    min-height: 80px;
     width: 64px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 16px;
+
+    @media only screen and (max-width: 48em) {
+        display: block;
+
+    } 
 `
 
 export const NavLink = styled(Link)`
@@ -74,6 +82,5 @@ export const NavLink = styled(Link)`
     font-weight: 900;
 
     @media only screen and (max-width: 48em) {
-        align-items: flex-start;
     } 
 `

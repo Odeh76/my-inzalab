@@ -19,7 +19,7 @@ function Layout({children}) {
 
     return (
         <Div>
-            {/* <Navbar /> */}
+            <Navbar />
             <GlobalStyles />
             <Main>{children}</Main>
             <Footer />

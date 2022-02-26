@@ -9,15 +9,15 @@ function Navbar() {
     const [openMenu, setOpenMenu] = useState(false);
     
     const handleClick = () => {setOpenMenu(!openMenu)};
-    // const closeMenu = () => {setOpenMenu(false)};
+   
 
 
     return (
         <>
         <Sidebar openMenu={openMenu}>
             <Bars onClick={handleClick} openMenu={openMenu} />
+            <CloseButton onClick={handleClick} openMenu={openMenu} />
             <NavbarLogo openMenu={openMenu} to="/" />
-            <CloseButton openMenu={openMenu} onClick={handleClick} />
             <NavLink openMenu={openMenu} to="/">Home</NavLink>
             <NavLink openMenu={openMenu} to="/twentyfiveundertwentyfive">25 Under 25</NavLink>
             <NavLink openMenu={openMenu} to="programs">Programs</NavLink>
