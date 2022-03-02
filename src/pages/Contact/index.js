@@ -1,10 +1,11 @@
 import React from 'react'
+import { Layout } from '../../components'
 
 function index() {
     return (
-        <div>
+        <Layout>
             Contact works
-        </div>
+        </Layout>
     )
 }
 

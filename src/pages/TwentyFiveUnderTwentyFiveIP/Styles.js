@@ -14,6 +14,10 @@ export const ContentContainer = styled.div`
     gap: 16px;
 `
 
+export const ContentContainer2 = styled(ContentContainer)`
+    flex-direction: row-reverse;
+`
+
 export const FeaturingHeader = styled(MainHeader)``
 
 export const FeaturingBtn = styled(WhatIsInzaLab)`

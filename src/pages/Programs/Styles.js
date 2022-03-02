@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { LearnMoreBtn } from "../../components/Buttons/LearnMore/Styles";
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles';
 import twentyFiveMainImage from '../../assets/img/boyWithGlasses.png'
 

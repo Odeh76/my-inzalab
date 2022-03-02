@@ -24,7 +24,7 @@ function Footer() {
           <RightFooterContainer>
               <FooterRightImage />
               <FooterLink to="/"><FooterLinkArrow />Home</FooterLink>
-              <FooterLink to="25under25"><FooterLinkArrow />25 Under 25</FooterLink>
+              <FooterLink to="twentyfiveundertwentyfive"><FooterLinkArrow />25 Under 25</FooterLink>
               <FooterLink to="programs"><FooterLinkArrow />Programs</FooterLink>
               <FooterLink to="resources"><FooterLinkArrow />Resources</FooterLink>
               <FooterLink to="meettheitos"><FooterLinkArrow />Meet The ITOs</FooterLink>

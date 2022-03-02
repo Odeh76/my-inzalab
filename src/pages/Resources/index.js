@@ -1,5 +1,4 @@
 import React from 'react'
-import { Layout } from '../../components'
 import { ResourcesDescription, ResourcesHeader, ResourcesContainer, ImageContainer, ResourcesImages, ResourcesLinksContainer, ResourcesLinks } from './Styles'
 
 

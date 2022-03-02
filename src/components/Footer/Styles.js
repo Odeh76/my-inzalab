@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import footerLeftImage from '../../assets/img/footerLeftImage.png'
 import footerRightImage from '../../assets/img/footerRightImage.png'
 import { Link } from 'react-router-dom'
-import { FaArrowRight, FaInstagram } from 'react-icons/fa'
-import { NewsLetterHeader } from '../Headers/SecondaryHeaders/Styles'
+import { FaArrowRight } from 'react-icons/fa'
+// import { NewsLetterHeader } from '../Headers/SecondaryHeaders/Styles'
 
 
 

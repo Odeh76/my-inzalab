@@ -12,9 +12,5 @@ export const MainHeader = styled.h1`
 
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) { 
-        font-size: 2rem;
-        letter-spacing: 0.3rem;
     } 
-`
-export const Authentic = styled(MainHeader)`
 `

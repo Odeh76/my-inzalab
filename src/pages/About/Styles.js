@@ -4,6 +4,11 @@ import aboutImage2 from '../../assets/img/aboutImage2.png'
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles';
 import {FaUserTie, FaHiking, FaMobileAlt, FaRing, FaCodeBranch, FaSmile, FaCat, FaCrow, FaCoffee, FaSpider, FaKey} from 'react-icons/fa'
 
+export const AboutContainer = styled.div`
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+`
 
 export const AdvertisingWord = styled.div`
   font-family: var(--lato);
@@ -26,29 +31,9 @@ export const AdvertisingWord = styled.div`
   }
 `
 
+  export const Authentic = styled(MainHeader)``
 
-export const AboutContainer = styled.div`
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-`
-
-export const Authentic = styled.h1`
-  font-size: 3rem;
-  font-family: var(--lato);
-  text-transform: uppercase;
-  letter-spacing: 1rem;
-  font-weight: 900;
-  position: relative;
-
-  // Mobile max-width: 640px
-  @media only screen and (max-width: 40em) { 
-    font-size: 3rem;
-    letter-spacing: 0.3rem;
-  }
-`
-
-export const AboutImage = styled.img`
+  export const AboutImage = styled.img`
   background-image: url(${aboutImage});
   width: 100%;
   min-height: 250px;

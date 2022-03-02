@@ -3,8 +3,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from '../../pages/Home'
 import About from '../../pages/About';
 import Contact from '../../pages/Contact'
-import Programs from '../../pages/Programs'
-import Resources from '../../pages/Resources'
+import ProgramsIP from '../../pages/ProgramsIP'
+import ResourcesIP from '../../pages/ResourcesIP'
+import Error from '../../pages/Error'
 import MeetTheITOs from '../../pages/MeetTheITOs'
 import TwentyFiveUnderTwentyFiveIP from '../../pages/TwentyFiveUnderTwentyFiveIP';
 
@@ -18,9 +19,10 @@ function ApplicationRouter() {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/meettheitos" element={<MeetTheITOs />} />
-                <Route path="/programs" element={<Programs />} />
-                <Route path="/resources" element={<Resources />} />
+                <Route path="/programs" element={<ProgramsIP />} />
+                <Route path="/resources" element={<ResourcesIP />} />
                 <Route path="/twentyfiveundertwentyfive" element={<TwentyFiveUnderTwentyFiveIP />} />
+                <Route path="/*" element={<Error />} />
             </Routes>
         </BrowserRouter>
     )
