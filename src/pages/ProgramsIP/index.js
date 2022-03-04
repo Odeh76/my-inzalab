@@ -1,6 +1,7 @@
 import React from 'react'
+import { FaPlus } from 'react-icons/fa'
 import { Layout } from '../../components'
-import { HowItWorksContainer, HowItWorksDescription, HowItWorksHeader, ProgramsIPContainer, ProgramsIPHeader, ProgramsIPMainImage, YellowVector } from './Styles'
+import { HowItWorksContainer, HowItWorksDescription, HowItWorksHeader, VideoInnerContainer, PhotoHeader, PhotoImage, ProgramsIPContainer, ProgramsIPHeader, ProgramsIPMainImage, VideoContainer, VideoHeader, VideoImage, YellowVector, DesignHeader, DesignImage, InnerInnerContainer } from './Styles'
 
 function ProgramsIP() {
   return (
@@ -23,6 +24,20 @@ function ProgramsIP() {
           </HowItWorksDescription>
         </HowItWorksContainer>
       </ProgramsIPContainer>
+      <VideoContainer>
+        <VideoInnerContainer>
+          <InnerInnerContainer>
+          <VideoHeader>Video <FaPlus /></VideoHeader>
+          <VideoImage />
+          </InnerInnerContainer>
+          <InnerInnerContainer>
+          <PhotoHeader>Photo <FaPlus /></PhotoHeader>
+          <PhotoImage />
+          </InnerInnerContainer>
+        </VideoInnerContainer>
+        <DesignHeader>Design</DesignHeader>
+        <DesignImage />
+      </VideoContainer>
     </Layout>
   )
 }
