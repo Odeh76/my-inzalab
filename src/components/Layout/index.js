@@ -10,13 +10,6 @@ import { Div, Main } from './Styles'
 function Layout({children}) {
 
 
-    // const [openMenu, setOpenMenu] = useState(false)
-    // const handleClick = (e) => {
-    //     e.preventDefault();
-    //     setOpenMenu(!openMenu);
-    //     console.log('link clicked')
-    // }
-
     return (
         <Div>
             <Navbar />

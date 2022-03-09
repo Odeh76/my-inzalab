@@ -1,7 +1,6 @@
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles';
 import styled from 'styled-components'
 import programsIPMainImage from '../../assets/img/programsIPMainImage.svg'
-import { FaArrowDown, FaLevelUpAlt } from 'react-icons/fa';
 
 
 export const HowItWorksHeader = styled(MainHeader)`

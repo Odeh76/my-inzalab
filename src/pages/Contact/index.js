@@ -1,12 +1,17 @@
 import React from 'react'
 import { Layout } from '../../components'
+import { ContactUsHeader } from './Styles'
 
-function index() {
+function ContactUs() {
     return (
+        <>
         <Layout>
-            Contact works
+            <ContactUsHeader>
+                Contact Us
+            </ContactUsHeader>
         </Layout>
+        </>
     )
 }
 
-export default index
+export default ContactUs

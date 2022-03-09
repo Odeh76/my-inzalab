@@ -1,17 +1,12 @@
-import { Layout } from "./components";
-import ApplicationRouter from "./components/Routes";
-import Home from "./pages/Home";
+import ApplicationRouter from "./Routes";
 
 
 
 function App() {
   return (
-      <ApplicationRouter>
-        <Layout>
-        <Home />
-        </Layout>
-      </ApplicationRouter>
-          
+     <>
+     <ApplicationRouter />
+     </>    
   );
 }
 

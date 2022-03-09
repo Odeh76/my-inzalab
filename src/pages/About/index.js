@@ -1,7 +1,7 @@
 import React from 'react'
 import { ForAndByGenZ, WhatIsInzaLab } from '../../components/Buttons/ForAndByGenZ/Styles'
 import { ClientsHeader, HereAsA } from '../../components/Headers/SecondaryHeaders/Styles'
-import { Authentic, AboutContainer, AboutImage, AboutImage2, AdvertisingWord, InnerAboutContainer, InnerImageContainer, Typography, Typography2, YellowRectangle, ButtonContainer, OptionButton, BrandButton, YellowRectangleClients, ClientsList } from './Styles'
+import { Authentic, AboutContainer, AboutImage, AboutImage2, AdvertisingWord, InnerAboutContainer, InnerImageContainer, Typography, Typography2, ButtonContainer, OptionButton, BrandButton, ClientsList } from './Styles'
 // import {FaUserTie, FaHiking, FaMobileAlt, FaRing, FaCodeBranch, FaSmile, FaCat, FaCrow, FaCoffee, FaSpider, FaKey, FaRoad} from 'react-icons/fa'
 
 

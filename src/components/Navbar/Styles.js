@@ -41,7 +41,8 @@ export const Sidebar = styled.nav`
     z-index: 5;
     background-color: var(--whiteMain);
     width: ${({openMenu}) => openMenu ? '225px' : '100px'};
-
+    font-family: var(--lato);
+    
     @media only screen and (max-width: 48em) {
         width: 100%;
         height: ${({openMenu}) => openMenu ? '70%' : '84px'};

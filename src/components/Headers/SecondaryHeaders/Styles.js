@@ -13,7 +13,6 @@ export const ClientsHeader = styled(SecondaryHeader)`
 `
 
 export const WelcomeTo = styled(SecondaryHeader)`
-    position: relative;
 `
 export const RestartAlphabet = styled(SecondaryHeader)`
     font-size: 1rem;

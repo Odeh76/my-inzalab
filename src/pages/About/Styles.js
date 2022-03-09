@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import aboutImage from '../../assets/img/aboutImage.png'
 import aboutImage2 from '../../assets/img/aboutImage2.png'
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles';
-import {FaUserTie, FaHiking, FaMobileAlt, FaRing, FaCodeBranch, FaSmile, FaCat, FaCrow, FaCoffee, FaSpider, FaKey} from 'react-icons/fa'
 
 export const AboutContainer = styled.div`
   width: 100%;

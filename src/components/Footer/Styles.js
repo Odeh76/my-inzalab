@@ -10,7 +10,7 @@ import { FaArrowRight } from 'react-icons/fa'
 export const FooterContainer = styled.div`
     width: 100%;
     position: relative;
-    min-height: 95vh;
+    min-height: 100vh;
 `
 
 export const FooterLink = styled(Link)`
