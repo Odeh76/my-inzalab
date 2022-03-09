@@ -1,6 +1,4 @@
-import ApplicationRouter from "./Routes";
-
-
+import ApplicationRouter from './routes/index'
 
 function App() {
   return (
