@@ -29,8 +29,7 @@ export const TwentyFiveContainer = styled.div`
 
   // Mobile max-width: 640px
 @media only screen and (max-width: 40em) {
-  flex-direction: column-reverse;
-  align-items: flex-end;
+  flex-direction: column;
 } 
 `
 
@@ -43,11 +42,11 @@ font-size: 3rem;
 
 
 // Mobile max-width: 640px
-@media only screen and (max-width: 40em) { 
-  margin-left: 24px;
-  top: 0;
-  height: 540px;
-  min-width: 450px;
+@media only screen and (max-width: 40em) {
+  height: 80px;
+  transform: rotate(0);
+  position: relative;
+  font-size: 2rem;
 } 
 `
 
