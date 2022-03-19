@@ -1,7 +1,9 @@
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { SecondaryHeader } from '../../components/Headers/SecondaryHeaders/Styles'
 import { motion } from 'framer-motion/dist/framer-motion'
+
+
 
 
 export const ContactUsContainer = styled(motion.div)`
@@ -31,6 +33,45 @@ export const AdvertiseWithUs = styled(SecondaryHeader)`
 export const ProgramsHeader = styled(SecondaryHeader)`
     color: var(--mustard);
 `
+
+// Form
+export const FormGrid = styled(motion.div)`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+`
+
+export const WrapperGrid = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+export const FirstNameHeader = styled(SecondaryHeader)`
+`
+export const FirstNameInput = styled.input``
+export const LastNameHeader = styled(SecondaryHeader)``
+export const LastNameInput = styled.input``
+export const EmailAddressHeader = styled(SecondaryHeader)``
+export const EmailAddressInput = styled.input``
+export const PhoneNumberHeader = styled(SecondaryHeader)``
+export const PhoneNumberInput = styled.input``
+export const CompanyNameHeader = styled(SecondaryHeader)``
+export const CompanyNameInput = styled.input``
+export const GenZOrBrandInput = styled.input``
+export const GenZOrBrandHeader = styled(SecondaryHeader)``
+export const QueryTypeHeader = styled(SecondaryHeader)`
+    float: left;
+`
+export const QueryTypeInput = styled.input`
+    width: 98%;
+`
+export const MessageHeader = styled(SecondaryHeader)`
+    float: left;
+`
+export const MessageInput = styled.input`
+    width: 98%;
+    height: 200px;
+`
+
 export const Descriptions = styled.p`
     max-width: 200px;
     font-family: var(--lato);
