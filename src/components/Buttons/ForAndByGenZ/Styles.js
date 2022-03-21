@@ -19,6 +19,7 @@ export const WhatIsInzaLab = styled(ResetDefaultButtonStyles)`
    // Mobile max-width: 640px
   @media only screen and (max-width: 40em) { 
     height: 64px;
+    width: 100%;
   }
 
     

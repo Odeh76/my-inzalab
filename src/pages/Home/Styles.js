@@ -44,7 +44,7 @@ export const Logo = styled.div`
     
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) {
-        margin-top: -48px;
+        margin-top: -72px;
         margin-left: 32px;
         width: 300px;
         height: 60px;
