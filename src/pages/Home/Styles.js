@@ -39,15 +39,16 @@ export const Logo = styled.div`
     position: absolute;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-top: -48px;
-    margin-left: 48px;
+    margin-top: -128px;
+    margin-left: 96px;
     
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) {
+        margin-top: -80px;
+        margin-left: 64px;
         width: 300px;
         height: 60px;
         background-image: url(${inzalabMobile});
-        margin-left: 72px;
     }
 
 

@@ -236,7 +236,9 @@ export const Typography = styled.div`
 
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) { 
-      width: 100%;
+      width: 90%;
+      margin-top: 16px;
+      margin-bottom: 16px;
       text-align: justify;
     }
 `
