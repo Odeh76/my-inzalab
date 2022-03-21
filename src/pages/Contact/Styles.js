@@ -1,5 +1,5 @@
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { SecondaryHeader } from '../../components/Headers/SecondaryHeaders/Styles'
 import { motion } from 'framer-motion/dist/framer-motion'
 
@@ -35,7 +35,7 @@ export const ProgramsHeader = styled(SecondaryHeader)`
 `
 
 // Form
-export const FormGrid = styled(motion.div)`
+export const FormGrid = styled(motion.form)`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -62,13 +62,13 @@ export const QueryTypeHeader = styled(SecondaryHeader)`
     float: left;
 `
 export const QueryTypeInput = styled.input`
-    width: 98%;
+    width: 99%;
 `
 export const MessageHeader = styled(SecondaryHeader)`
     float: left;
 `
 export const MessageInput = styled.input`
-    width: 98%;
+    width: 99%;
     height: 200px;
 `
 

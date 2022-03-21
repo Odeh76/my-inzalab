@@ -39,8 +39,8 @@ export const Logo = styled.div`
     position: absolute;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-top: -140px;
-    margin-left: 104px;
+    margin-top: -48px;
+    margin-left: 48px;
     
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) {
