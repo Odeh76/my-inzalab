@@ -20,17 +20,18 @@ export const AdvertisingWord = styled.div`
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   top: 80px;
-  margin-left: -10px;
+  margin-left: 52px;
 
   // Mobile max-width: 640px
   @media only screen and (max-width: 40em) { 
-    font-size: 2.5rem;
+    font-size: 3rem;
     letter-spacing: 0.3rem;
-    margin: 0;
   }
 `
 
-  export const Authentic = styled(MainHeader)``
+  export const Authentic = styled(MainHeader)`
+    margin-left: 64px;
+  `
 
   export const AboutImage = styled.img`
   background-image: url(${aboutImage});

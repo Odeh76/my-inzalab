@@ -44,8 +44,8 @@ export const Logo = styled.div`
     
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) {
-        margin-top: -80px;
-        margin-left: 64px;
+        margin-top: -48px;
+        margin-left: 32px;
         width: 300px;
         height: 60px;
         background-image: url(${inzalabMobile});

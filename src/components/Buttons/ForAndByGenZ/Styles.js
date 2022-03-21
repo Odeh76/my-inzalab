@@ -31,9 +31,9 @@ export const ForAndByGenZ = styled(ResetDefaultButtonStyles)`
     align-items: center;
     border: 1px solid #000000;
     justify-content: flex-start;
-    width: 112%;
+    width: 100%;
     height: 80px;
-    margin-left: -60px;
+    margin-left: 0px;
     margin-top: 8px;
     span {
         text-transform: uppercase;
@@ -50,6 +50,8 @@ export const ForAndByGenZ = styled(ResetDefaultButtonStyles)`
     }
 
     // Mobile max-width: 640px
-    @media only screen and (max-width: 40em) { 
+    @media only screen and (max-width: 40em) {
+        div {
+        } 
     } 
 `
