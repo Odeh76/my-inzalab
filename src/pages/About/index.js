@@ -1,7 +1,6 @@
 import React from 'react'
 import { ForAndByGenZ, WhatIsInzaLab } from '../../components/Buttons/ForAndByGenZ/Styles'
-import { ClientsHeader, HereAsA } from '../../components/Headers/SecondaryHeaders/Styles'
-import { Authentic, AboutContainer, AboutImage, AboutImage2, AdvertisingWord, InnerAboutContainer, InnerImageContainer, Typography, Typography2, ButtonContainer, OptionButton, BrandButton, ClientsList } from './Styles'
+import { Authentic, AboutContainer, AboutImage, AboutImage2, AdvertisingWord, InnerAboutContainer, InnerImageContainer, Typography, Typography2 } from './Styles'
 // import {FaUserTie, FaHiking, FaMobileAlt, FaRing, FaCodeBranch, FaSmile, FaCat, FaCrow, FaCoffee, FaSpider, FaKey, FaRoad} from 'react-icons/fa'
 
 
@@ -28,26 +27,7 @@ function About() {
             </Typography2>
             </InnerAboutContainer>
         </AboutContainer>
-        <HereAsA>I'm here as a...</HereAsA>
-        <ButtonContainer>
-            <OptionButton>
-                {/* <div><FaHiking /><FaMobileAlt className="optionMobileIcon" /></div> */}
-                Gen Z</OptionButton>
-            <BrandButton>
-            {/* <div><FaUserTie /></div> */}
-            Brand</BrandButton>
-        </ButtonContainer>
-        <ClientsHeader>Clients</ClientsHeader>
-        <ClientsList>
-            {/* <div><FaRing /></div>
-            <div><FaCrow /></div>
-            <div><FaCodeBranch /></div>
-            <div><FaCoffee /></div>
-            <div><FaSmile /></div>
-            <div><FaSpider /></div>
-            <div><FaCat /></div>
-            <div><FaKey /></div> */}
-        </ClientsList>
+        
         </>
     )
 }

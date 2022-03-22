@@ -85,3 +85,8 @@ export const NavLink = styled(Link)`
     @media only screen and (max-width: 48em) {
     } 
 `
+
+export const NavBorder = styled.div`
+    border: 1px solid var(--blackMain);
+    width: 100%;
+`

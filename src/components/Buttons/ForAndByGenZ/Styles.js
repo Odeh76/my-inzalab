@@ -52,6 +52,7 @@ export const ForAndByGenZ = styled(ResetDefaultButtonStyles)`
 
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) {
+        border-left: 0;
         div {
         } 
     } 

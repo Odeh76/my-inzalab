@@ -26,11 +26,18 @@ export const AdvertisingWord = styled.div`
   @media only screen and (max-width: 40em) { 
     font-size: 3rem;
     letter-spacing: 0.3rem;
+    margin: 0;
   }
 `
 
   export const Authentic = styled(MainHeader)`
+
     margin-left: 64px;
+
+  // Mobile max-width: 640px
+  @media only screen and (max-width: 40em) {
+    margin: 0;
+  }
   `
 
   export const AboutImage = styled.img`
@@ -44,7 +51,6 @@ export const AdvertisingWord = styled.div`
   
   // Mobile max-width: 640px
   @media only screen and (max-width: 40em) { 
-    height: 200px;
   }
   `
   
@@ -210,7 +216,6 @@ export const InnerImageContainer = styled.div`
   position: absolute;
   left: 0;
   top: 0;
-  min-height: 100%;
   margin-top: -48px;
   width: 50%;
   gap: 1rem;
@@ -219,7 +224,6 @@ export const InnerImageContainer = styled.div`
 @media only screen and (max-width: 40em) { 
   width: 100%;
   position: relative;
-
 } 
   
 `
@@ -258,8 +262,7 @@ export const Typography2 = styled(Typography)`
   right: 0;
   top: 42px;
   height: 100%;
-  max-height: 600px;
-  width: 50%;
+    width: 50%;
 
   // Mobile max-width: 640px
 @media only screen and (max-width: 40em) { 

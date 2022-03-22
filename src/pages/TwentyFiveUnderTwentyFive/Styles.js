@@ -12,9 +12,9 @@ export const TwentyFiveMainImage = styled.img`
   height: 626px;
 
   // Mobile max-width: 640px
-@media only screen and (max-width: 40em) { 
+@media only screen and (max-width: 40em) {
   width: 90%;
-  height: 500px;
+  height: 500px; 
 } 
 `
 
@@ -29,7 +29,8 @@ export const TwentyFiveContainer = styled.div`
 
   // Mobile max-width: 640px
 @media only screen and (max-width: 40em) {
-  flex-direction: column;
+  flex-direction: column-reverse;
+  align-items: flex-end;
 } 
 `
 
@@ -38,15 +39,12 @@ position: absolute;
 transform: rotate(-90deg);
 left: 0;
 height: 620px;
-font-size: 3rem;
 
 
 // Mobile max-width: 640px
 @media only screen and (max-width: 40em) {
-  height: 80px;
-  transform: rotate(0);
-  position: relative;
-  font-size: 2rem;
+  height: 470px;
+  top: 0;
 } 
 `
 
@@ -59,8 +57,8 @@ width: 40%;
 height: 626px;
 
 // Mobile max-width: 640px
-@media only screen and (max-width: 40em) { 
-  width: 90%;
+@media only screen and (max-width: 40em) {
+  width: 100%;
   height: auto;
 } 
 `
@@ -70,7 +68,7 @@ export const Description = styled.div`
   width: 100%;
 
   // Mobile max-width: 640px
-  @media only screen and (max-width: 40em) { 
-    margin-bottom: 32px;
+  @media only screen and (max-width: 40em) {
+    margin-bottom: 32px; 
   } 
 `
