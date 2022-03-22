@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Sidebar, NavLink, Bars, CloseButton, NavbarLogo, UserCircle  } from './Styles'
 
 
@@ -7,9 +7,11 @@ import { Sidebar, NavLink, Bars, CloseButton, NavbarLogo, UserCircle  } from './
 function Navbar() {
 
     const [openMenu, setOpenMenu] = useState(false);
-    
     const handleClick = () => {setOpenMenu(!openMenu)};
-   
+    
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
 
 
     return (

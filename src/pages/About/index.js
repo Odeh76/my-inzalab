@@ -26,8 +26,7 @@ function About() {
                 In Korean, “insa” is slang for an insider, someone who is plugged into the cultural zeitgeist of what’s trending. With inZa Lab, we are giving the insiders, Gen Zers themselves, a platform to write their own stories - Creating Gen Z Content by Gen Z.  
             </Typography2>
             </InnerAboutContainer>
-        </AboutContainer>
-        
+        </AboutContainer> 
         </>
     )
 }

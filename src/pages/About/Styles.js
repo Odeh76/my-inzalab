@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import aboutImage from '../../assets/img/aboutImage.png'
-import aboutImage2 from '../../assets/img/aboutImage2.png'
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles';
 
 export const AboutContainer = styled.div`
   width: 100%;
   min-height: 100vh;
   position: relative;
+  margin-bottom: 80px;
 `
 
 export const AdvertisingWord = styled.div`
@@ -20,7 +20,7 @@ export const AdvertisingWord = styled.div`
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   top: 80px;
-  margin-left: 52px;
+  margin-left: 65px;
 
   // Mobile max-width: 640px
   @media only screen and (max-width: 40em) { 
@@ -32,7 +32,7 @@ export const AdvertisingWord = styled.div`
 
   export const Authentic = styled(MainHeader)`
 
-    margin-left: 64px;
+    margin-left: 80px;
 
   // Mobile max-width: 640px
   @media only screen and (max-width: 40em) {
@@ -54,160 +54,16 @@ export const AdvertisingWord = styled.div`
   }
   `
   
-  export const AboutImage2  = styled.img`
-  background-image: url(${aboutImage2});
-  width: 100%;
-  min-height: 250px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-
+  export const AboutImage2  = styled(AboutImage)`
+  margin: 0;
   
   // Mobile max-width: 640px
   @media only screen and (max-width: 40em) { 
-    height: 200px;
   }
 `
 
 
-export const ButtonContainer = styled.div`
-  display: flex;
-  width: 100%;
-  gap: 1rem;
 
-@media only screen and (max-width: 64em) { 
-  flex-direction: column;
-}
-
-`
-
-export const ClientsList = styled.ul`
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-align-items: center;
-justify-items: center;
-list-style: none;
-gap: 1rem;
-div {
-  font-size: 5rem;
-}
-
-// Mobile max-width: 640px
-@media only screen and (max-width: 40em) { 
-  div {
-    font-size: 2rem;
-  }
-} 
-`
-
-export const OptionButton = styled.button`
- 
-    font-family: var(--lato) !important;
-    font-weight: 900 !important;
-    background: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 3rem !important;
-    
-    div {
-        display: flex;
-        padding: 1.5rem;
-        
-    }
-
-    .optionMobileIcon {
-        margin-left: -0.59rem;
-    }
-
-    // Mobile max-width: 640px
-@media only screen and (max-width: 40em) {
-    width: 156px;
-    height: 128px;
-    font-size: 1.5rem;
-    position: relative;
-    margin: 0 auto 1rem auto;
-
-
-        div {
-            font-size: 3rem;
-        }
-
-        .optionMobileIcon {
-            margin-left: -1.2rem;
-        }
-
-
-    }
-
-    
-
-
-// Tablet screens min-width 641px and max-width 1024px
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-    width: 50%;
-    height: 250px;
-    font-size: 3rem;
-
-    .optionMobileIcon {
-        margin-left: -1.2rem;
-    }
-}
-
-// Laptop screens min-width 1025px and max-width: 1440px;
-@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
-    width: 470px;
-    height: 388px;
-    margin: 0 auto;
-    font-size: 3rem;
-    div {
-        font-size: 5rem;
-
-    }
-
-    .optionMobileIcon {
-        margin-left: -2rem;
-    }
-} 
-
-// Desktops and largest screens min-width 1441px and max-width 1920px
-@media only screen and (min-width: 90.063em) and (max-width: 120em) {
-    width: 470px;
-    height: 388px;
-    margin: 0 auto;
-    font-size: 3rem;
-
-    div {
-        font-size: 5rem;
-    }
-
-    .optionMobileIcon {
-        margin-left: -2rem;
-    }
- }
-
- // Largest screens
-@media only screen and (min-width: 120.063em) { 
-    width: 470px;
-    height: 388px;
-    font-size: 3rem;
-
-    div {
-        font-size: 5rem;
-    }
-
-    .optionMobileIcon {
-        margin-left: -2rem;
-    }
-}
-
-`
-
-export const BrandButton = styled(OptionButton)`
-    
-`
 
 export const InnerImageContainer = styled.div`
   display: flex;
