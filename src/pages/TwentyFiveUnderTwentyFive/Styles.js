@@ -45,7 +45,7 @@ height: 620px;
 
 // Mobile max-width: 640px
 @media only screen and (max-width: 40em) {
-  height: 360px;
+  height: 350px;
   top: 60px;
 } 
 `
@@ -60,8 +60,9 @@ height: 626px;
 
 // Mobile max-width: 640px
 @media only screen and (max-width: 40em) {
-  width: 100%;
+  width: 90%;
   height: auto;
+  align-items: flex-start;
 } 
 `
 
