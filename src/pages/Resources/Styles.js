@@ -9,12 +9,19 @@ export const ResourcesContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
+    
+    // Mobile max-width: 640px
+    @media only screen and (max-width: 40em) {
+      margin: 0;
+    } 
 `
 
 export const ResourcesDescription = styled.div`
     font-family: var(--lato);
     font-weight: 400;
     font-size: 1.5rem;
+    margin-bottom: 16px;
 `
 
 export const ImageContainer = styled.div`

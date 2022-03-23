@@ -9,6 +9,8 @@ width: 60px;
 min-height: 60px;
 padding-top: 16px;
 margin: 0 16px;
+order: 2;
+
 `
 
 
@@ -62,6 +64,7 @@ export const NavbarLogo = styled(Link)`
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 16px;
+    cursor: pointer;
 
     @media only screen and (max-width: 48em) {
         display: block;
@@ -78,12 +81,18 @@ export const NavLink = styled(Link)`
     color: var(--blackMain);
     cursor: pointer;
     letter-spacing: 0.05rem;
-    padding-top: 16px;
     margin: 0 16px;
     font-weight: 900;
+    padding-top: 16px;
 
     @media only screen and (max-width: 48em) {
     } 
+`
+
+export const NavList = styled.ul`
+    height: 100%;
+    width: 100%;
+    margin: 0;
 `
 
 export const NavBorder = styled.div`

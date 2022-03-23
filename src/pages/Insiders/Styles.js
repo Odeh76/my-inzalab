@@ -22,11 +22,13 @@ export const InsidersContainer = styled.div`
     align-items: center;
     position: relative;
     gap: 64px;
+    margin-bottom: 80px;
 
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) {
       flex-direction: column-reverse;
       align-items: flex-end;
+      margin: 0;
     }
 `
 
