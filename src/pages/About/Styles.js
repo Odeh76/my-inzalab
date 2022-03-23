@@ -24,19 +24,23 @@ export const AdvertisingWord = styled.div`
 
   // Mobile max-width: 640px
   @media only screen and (max-width: 40em) { 
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 0.3rem;
     margin: 0;
+    top: 0;
+    margin-left: -8px;
   }
 `
 
   export const Authentic = styled(MainHeader)`
 
     margin-left: 80px;
-
+    position: relative;
   // Mobile max-width: 640px
   @media only screen and (max-width: 40em) {
     margin: 0;
+    font-size: 2rem;
+    bottom: 32px;
   }
   `
 
@@ -50,7 +54,8 @@ export const AdvertisingWord = styled.div`
   margin-top: -48px;
   
   // Mobile max-width: 640px
-  @media only screen and (max-width: 40em) { 
+  @media only screen and (max-width: 40em) {
+    min-height: 200px; 
   }
   `
   

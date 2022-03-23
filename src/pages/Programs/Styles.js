@@ -46,9 +46,8 @@ height: 620px;
 
 // Mobile max-width: 640px
 @media only screen and (max-width: 40em) { 
-  margin-left: 24px;
-  top: 0;
-  height: auto;
+  height: 320px;
+  top: 60px;
 } 
 `
 
