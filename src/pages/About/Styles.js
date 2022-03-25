@@ -24,11 +24,11 @@ export const AdvertisingWord = styled.div`
 
   // Mobile max-width: 640px
   @media only screen and (max-width: 40em) { 
-    font-size: 2rem;
+    font-size: 2.3rem;
     letter-spacing: 0.3rem;
     margin: 0;
     top: 0;
-    margin-left: -8px;
+    margin-left: 32px;
   }
 `
 
@@ -41,6 +41,7 @@ export const AdvertisingWord = styled.div`
     margin: 0;
     font-size: 2rem;
     bottom: 32px;
+    margin-left: 36px;
   }
   `
 

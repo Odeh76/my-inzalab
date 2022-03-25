@@ -1,7 +1,13 @@
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles';
 import styled from 'styled-components'
 import programsIPMainImage from '../../assets/img/programsIPMainImage.svg'
+import { SecondaryHeader } from '../../components/Headers/SecondaryHeaders/Styles';
 
+
+export const DesignContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+`
 
 export const HowItWorksHeader = styled(MainHeader)`
     font-size: 2rem;
@@ -48,6 +54,19 @@ background-repeat: no-repeat;
 background-size: cover;
 `
 
+export const PrizeHeader = styled(SecondaryHeader)`
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    `
+export const InstructionsHeader = styled(SecondaryHeader)`
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    `
+export const DeadlineHeader = styled(SecondaryHeader)`
+    font-size: 1.5rem;
+    text-transform: capitalize;
+`
+
 export const VideoContainer = styled.div`
     display: flex;
 `
@@ -68,6 +87,7 @@ export const VideoHeader = styled(MainHeader)`
     width: 15%;
     display: flex;
     align-items: center;
+    margin: 0;
 `
 
 export const VideoImage = styled.img`
@@ -81,9 +101,11 @@ background-size: cover;
 
 export const PhotoHeader = styled(VideoHeader)``
 export const PhotoImage = styled(VideoImage)``
-export const DesignHeader = styled(VideoHeader)``
+export const DesignHeader = styled(VideoHeader)`
+    margin-left: 16px;
+`
 export const DesignImage = styled(VideoImage)`
-    height: 400px;
+    height: 300px;
 `
 
 export const YellowVector = styled.div`    

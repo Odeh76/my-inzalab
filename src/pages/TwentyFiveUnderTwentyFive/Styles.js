@@ -47,6 +47,7 @@ height: 620px;
 @media only screen and (max-width: 40em) {
   height: 350px;
   top: 60px;
+  padding-bottom: 24px
 } 
 `
 
