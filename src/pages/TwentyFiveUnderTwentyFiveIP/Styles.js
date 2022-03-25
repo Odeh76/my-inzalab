@@ -12,13 +12,30 @@ import { MainHeader } from '../../components/Headers/MainHeaders/Styles'
 export const ContentContainer = styled.div`
     display: flex;
     gap: 16px;
+
+    // max-width: 992px
+    @media only screen and (max-width: 62em) { 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 export const ContentContainer2 = styled(ContentContainer)`
     flex-direction: row-reverse;
+
+    // max-width: 992px
+    @media only screen and (max-width: 62em) { 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
 `
 
-export const FeaturingHeader = styled(MainHeader)``
+export const FeaturingHeader = styled(MainHeader)`
+    
+
+`
 
 export const FeaturingBtn = styled(WhatIsInzaLab)`
     color: var(--yellow);
@@ -29,6 +46,11 @@ export const FeaturingBtn = styled(WhatIsInzaLab)`
 
 export const FounderContainer = styled.div`
     width: 40%;
+
+    // max-width: 992px
+    @media only screen and (max-width: 62em) { 
+        width: 100%;
+    }    
 `
 
 export const FounderDescription = styled.p`
@@ -47,6 +69,17 @@ export const GridContainer = styled.div`
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     gap: 1rem;
+
+    // max-width: 640px
+    @media only screen and (max-width: 40em) { 
+        grid-template-columns: repeat(1, 1fr);
+    }
+    // Tablet screens min-width 641px and max-width 1024px
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+        grid-template-columns: repeat(2, 1fr);
+     }
+
+
 `
 
 export const GridImages = styled.img`
