@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles';
 import twentyFiveMainImage from '../../assets/img/boyWithGlasses.png'
+import { motion } from 'framer-motion/dist/framer-motion'
 
 
 export const ProgramsMainImage = styled.img`
@@ -19,7 +20,7 @@ background-size: cover;
 } 
 `
 
-export const ProgramsContainer = styled.div`
+export const ProgramsContainer = styled(motion.div)`
     width: 100%;
     min-height: 100vh;
     display: flex;

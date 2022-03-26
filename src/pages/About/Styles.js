@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import aboutImage from '../../assets/img/aboutImage.png'
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles';
+import { motion } from 'framer-motion/dist/framer-motion'
 
-export const AboutContainer = styled.div`
+export const AboutContainer = styled(motion.div)`
   width: 100%;
   min-height: 100vh;
   position: relative;

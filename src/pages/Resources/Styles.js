@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles';
 import resourcesPhoneImage from '../../assets/img/resourcesPhoneImage.png'
+import { motion } from 'framer-motion/dist/framer-motion'
 
-export const ResourcesContainer = styled.div`
+export const ResourcesContainer = styled(motion.div)`
     width: 100%;
     min-height: 100vh;
     display: flex;

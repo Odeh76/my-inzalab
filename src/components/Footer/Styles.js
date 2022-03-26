@@ -4,10 +4,10 @@ import footerRightImage from '../../assets/img/footerRightImage.png'
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
 // import { NewsLetterHeader } from '../Headers/SecondaryHeaders/Styles'
+import { motion } from 'framer-motion/dist/framer-motion'
 
 
-
-export const FooterContainer = styled.div`
+export const FooterContainer = styled(motion.div)`
     width: 100%;
     position: relative;
     min-height: 100vh;

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles';
 import insidersMainImage from '../../assets/img/insidersMainImage.png'
+import { motion } from 'framer-motion/dist/framer-motion'
 
 
 export const Description = styled.div`
@@ -14,7 +15,7 @@ export const Description = styled.div`
 `
 
 
-export const InsidersContainer = styled.div`
+export const InsidersContainer = styled(motion.div)`
     width: 100%;
     min-height: 100vh;
     display: flex;

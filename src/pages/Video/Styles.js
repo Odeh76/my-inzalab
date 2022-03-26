@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { FaRegPlayCircle, FaArrowDown, FaLevelUpAlt } from 'react-icons/fa'
+import { motion } from 'framer-motion/dist/framer-motion'
 
 
 export const ArrowDown = styled(FaArrowDown)`
@@ -38,7 +39,7 @@ export const PlayText = styled.div`
 `
 
 
-export const VideoContainer = styled.div`
+export const VideoContainer = styled(motion.div)`
     width: 100%;
     min-height: 100vh;
     display: flex;
