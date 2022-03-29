@@ -19,6 +19,7 @@ function TwentyFiveUnderTwentyFive() {
         </InnerTwentyFiveContainer>
         <TwentyFiveMainImage />
     </TwentyFiveContainer>
+    
         </>
     )
 }
