@@ -31,6 +31,12 @@ export const InsidersContainer = styled(motion.div)`
       align-items: flex-end;
       margin: 0;
     }
+
+    // Tablet screens min-width 641px and max-width 1024px
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+  flex-direction: column;
+  height: 100%;
+}
 `
 
 export const InsidersHeader = styled(MainHeader)`
@@ -43,7 +49,14 @@ height: 520px;
 @media only screen and (max-width: 40em) { 
   height: 300px;
   top: 60px;
-} 
+}
+
+// Tablet screens min-width 641px and max-width 1024px
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  height: 80px;
+  transform: rotate(0);
+  position: relative;
+}
 `
 
 export const InnerInsidersContainer = styled.div`
@@ -58,7 +71,13 @@ export const InnerInsidersContainer = styled.div`
     @media only screen and (max-width: 40em) { 
         width: 90%;
         height: auto;
-    } 
+    }
+    
+    // Tablet screens min-width 641px and max-width 1024px
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+        height: 100%;
+        width: 60%;
+      }
 `
 
 export const InsidersMainImage = styled.img`
@@ -74,5 +93,10 @@ export const InsidersMainImage = styled.img`
     @media only screen and (max-width: 40em) { 
       width: 90%;
       height: 500px;
-    } 
+    }
+    
+    // Tablet screens min-width 641px and max-width 1024px
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+        width: 60%;
+      }
 `

@@ -1,23 +1,28 @@
 import styled from "styled-components"
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles';
-import twentyFiveMainImage from '../../assets/img/boyWithGlasses.png'
+import programsMainImage from '../../assets/img/programsMainImage.svg'
 import { motion } from 'framer-motion/dist/framer-motion'
 
 
 export const ProgramsMainImage = styled.img`
 display: block;
-background-image: url(${twentyFiveMainImage});
+background-image: url(${programsMainImage});
 background-position: center center;
 background-repeat: no-repeat;
+background-size: cover;
 width: 45%;
 height: 626px;
-background-size: cover;
 
 // Mobile max-width: 640px
 @media only screen and (max-width: 40em) { 
   width: 90%;
   height: 500px;
-} 
+}
+
+// Tablet screens min-width 641px and max-width 1024px
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+        width: 60%;
+      }
 `
 
 export const ProgramsContainer = styled(motion.div)`
@@ -36,7 +41,13 @@ export const ProgramsContainer = styled(motion.div)`
   flex-direction: column-reverse;
   align-items: flex-start;
   margin: 0;
-} 
+}
+
+// Tablet screens min-width 641px and max-width 1024px
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+  flex-direction: column;
+  height: 100%;
+}
 `
 
 export const ProgramsHeader = styled(MainHeader)`
@@ -49,7 +60,14 @@ height: 620px;
 @media only screen and (max-width: 40em) { 
   height: 320px;
   top: 60px;
-} 
+}
+
+// Tablet screens min-width 641px and max-width 1024px
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  height: 80px;
+  transform: rotate(0);
+  position: relative;
+}
 `
 
 export const InnerProgramsContainer = styled.div`
@@ -64,7 +82,13 @@ export const InnerProgramsContainer = styled.div`
     @media only screen and (max-width: 40em) { 
       width: 90%;
       height: auto;
-    } 
+    }
+    
+    // Tablet screens min-width 641px and max-width 1024px
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+        height: 100%;
+        width: 60%;
+      }
 `
 
 export const Description = styled.div`

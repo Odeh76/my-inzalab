@@ -16,7 +16,12 @@ export const TwentyFiveMainImage = styled.img`
 @media only screen and (max-width: 40em) {
   width: 90%;
   height: 500px; 
-} 
+}
+
+// Tablet screens min-width 641px and max-width 1024px
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+        width: 60%;
+      }
 `
 
 export const TwentyFiveContainer = styled(motion.div)`
@@ -34,7 +39,13 @@ export const TwentyFiveContainer = styled(motion.div)`
   flex-direction: column-reverse;
   align-items: flex-end;
   margin: 0;
-} 
+}
+
+// Tablet screens min-width 641px and max-width 1024px
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+  flex-direction: column;
+  height: 100%;
+}
 `
 
 export const TwentyFiveHeader = styled(MainHeader)`
@@ -48,8 +59,15 @@ height: 620px;
 @media only screen and (max-width: 40em) {
   height: 350px;
   top: 60px;
-  padding-bottom: 24px
-} 
+  padding-bottom: 24px;
+}
+
+// Tablet screens min-width 641px and max-width 1024px
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  height: 80px;
+  transform: rotate(0);
+  position: relative;
+}
 `
 
 export const InnerTwentyFiveContainer = styled.div`
@@ -65,7 +83,13 @@ height: 626px;
   width: 90%;
   height: auto;
   align-items: flex-start;
-} 
+}
+
+// Tablet screens min-width 641px and max-width 1024px
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+        height: 100%;
+        width: 60%;
+      }
 `
 
 export const Description = styled.div`

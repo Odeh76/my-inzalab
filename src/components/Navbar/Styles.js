@@ -13,6 +13,17 @@ order: 2;
 
 `
 
+export const BottomUserCircle = styled(FaUserCircle)`
+
+    display: block;
+    width: 60px;
+    min-height: 60px;
+    margin-right: 16px;
+
+@media only screen and (min-width: 64em) {
+    display: none;
+}
+`
 
 export const Bars = styled(FaBars)`
 display: ${({openMenu}) => openMenu ? 'none' : 'block'};
@@ -23,6 +34,17 @@ cursor: pointer;
 margin: 0 16px;
 `
 
+export const BottomBars = styled(FaBars)`
+    display: ${({openMenu}) => openMenu ? 'none' : 'block'};
+    width: 60px;
+    min-height: 60px;
+    cursor: pointer;
+
+@media only screen and (min-width: 64em) {
+    display: none;
+}
+`
+
 export const CloseButton = styled(FaTimes)`
     min-height: 60px;
     width: 60px;
@@ -31,7 +53,32 @@ export const CloseButton = styled(FaTimes)`
     margin: 0 16px;
 `
 
+export const BottomCloseButton = styled(FaTimes)`
+    min-height: 60px;
+    width: 60px;
+    display: ${({openMenu}) => openMenu ? 'block' : 'none'};
 
+@media only screen and (min-width: 64em) {
+    display: none;
+}
+`
+
+export const BottomBar = styled.nav`
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+    background-color: var(--whiteMain);
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+
+    @media only screen and (min-width: 64em) {
+        display: none;
+    }
+`
 
 export const Sidebar = styled.nav`
     display: flex;
@@ -44,14 +91,10 @@ export const Sidebar = styled.nav`
     background-color: var(--whiteMain);
     width: ${({openMenu}) => openMenu ? '225px' : '100px'};
     font-family: var(--lato);
-    
-    @media only screen and (max-width: 48em) {
-        width: 100%;
-        height: ${({openMenu}) => openMenu ? '70%' : '84px'};
-        flex-direction: ${({openMenu}) => openMenu ? 'column' : 'row'};
-        bottom: 0;
-        align-items: ${({openMenu}) => openMenu ? 'flex-start' : 'flex-end'};
-        
+    @media only screen and (max-width: 64em) {
+        margin: 0;
+        padding: 0;
+        display: none;        
     } 
 `
 
@@ -72,6 +115,24 @@ export const NavbarLogo = styled(Link)`
     } 
 `
 
+export const BottomNavbarLogo = styled(Link)`
+    display: ${({openMenu}) => openMenu ? 'none' : 'block'};
+    background: url(${navbarLogoLink});
+    min-height: 80px;
+    width: 64px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+
+
+@media only screen and (min-width: 64em) {
+    display: none;
+}
+`
+
 export const NavLink = styled(Link)`
     display: ${({openMenu}) => openMenu ? 'block' : 'none'};
     font-family: var(--lato);
@@ -89,11 +150,6 @@ export const NavLink = styled(Link)`
     } 
 `
 
-export const NavList = styled.ul`
-    height: 100%;
-    width: 100%;
-    margin: 0;
-`
 
 export const NavBorder = styled.div`
     border: 1px solid var(--blackMain);

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { MainHeader } from '../../components/Headers/MainHeaders/Styles';
 import resourcesPhoneImage from '../../assets/img/resourcesPhoneImage.png'
+import resourcesMainImageTwoPeople from '../../assets/img/resourcesMainImageTwoPeople.svg'
 import { motion } from 'framer-motion/dist/framer-motion'
 
 export const ResourcesContainer = styled(motion.div)`
@@ -15,7 +16,11 @@ export const ResourcesContainer = styled(motion.div)`
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) {
       margin: 0;
-    } 
+    }
+    
+    // Tablet screens min-width 641px and max-width 1024px
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    }
 `
 
 export const ResourcesDescription = styled.div`
@@ -23,6 +28,11 @@ export const ResourcesDescription = styled.div`
     font-weight: 400;
     font-size: 1.5rem;
     margin-bottom: 16px;
+
+    // Tablet screens min-width 641px and max-width 1024px
+    @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+      width: 60%;
+  }
 `
 
 export const ImageContainer = styled.div`
@@ -36,7 +46,14 @@ export const ImageContainer = styled.div`
     @media only screen and (max-width: 40em) { 
       grid-template-columns: repeat(1, 1fr);
       grid-row-gap: 16px;
-    } 
+    }
+    
+    // Tablet screens min-width 641px and max-width 1024px
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
 `
 
 export const ResourcesLinks = styled.button`
@@ -62,10 +79,16 @@ export const ResourcesLinksContainer = styled.div`
     // Mobile max-width: 640px
     @media only screen and (max-width: 40em) { 
       grid-template-columns: repeat(1, 1fr);
-    } 
+    }
+    
+    // Tablet screens min-width 641px and max-width 1024px
+      @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+      grid-template-columns: repeat(1, 1fr);
+        width: 60%;
+    }
 `
 
-export const ResourcesImages = styled.img`
+export const ResourcesImage = styled.img`
     width: 100%;
     height: 400px;
     background-image: url(${resourcesPhoneImage});
@@ -74,6 +97,10 @@ export const ResourcesImages = styled.img`
     background-repeat: no-repeat;
     background-size: cover;
 
+`
+
+export const ResourcesImage2 = styled(ResourcesImage)`
+    background-image: url(${resourcesMainImageTwoPeople})
 `
 
 
