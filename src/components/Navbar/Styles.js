@@ -18,7 +18,7 @@ export const BottomUserCircle = styled(FaUserCircle)`
     display: block;
     width: 60px;
     min-height: 60px;
-    margin-right: 16px;
+    padding-right: 24px;
 
 @media only screen and (min-width: 64em) {
     display: none;
@@ -63,17 +63,19 @@ export const BottomCloseButton = styled(FaTimes)`
 }
 `
 
-export const BottomBar = styled.nav`
-    display: flex;
+export const BottomNavBar = styled.nav`
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     z-index: 5;
     background-color: var(--whiteMain);
     bottom: 0;
-    margin: 0;
-    padding: 0;
+    
+    div {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     @media only screen and (min-width: 64em) {
         display: none;
@@ -124,8 +126,7 @@ export const BottomNavbarLogo = styled(Link)`
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
-    padding: 0;
-    margin: 0;
+    
 
 
 @media only screen and (min-width: 64em) {
@@ -154,4 +155,10 @@ export const NavLink = styled(Link)`
 export const NavBorder = styled.div`
     border: 1px solid var(--blackMain);
     width: 100%;
+    `
+    
+export const NavBorderBottom = styled.div`
+display: ${({openMenu}) => openMenu ? 'block' : 'none'} !important;
+width: 100%;
+border: 1px solid var(--blackMain);
 `

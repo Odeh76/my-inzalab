@@ -15,6 +15,17 @@ export const DesignContainer = styled.div`
     position: absolute;
     top: 0;
     right: 0;
+
+    // Tablet screens max-width 1024px
+    @media only screen and (max-width: 64em) {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
 `
 
 export const HowItWorksHeader = styled(MainHeader)`
@@ -22,6 +33,12 @@ export const HowItWorksHeader = styled(MainHeader)`
     letter-spacing: 0.5rem;
     font-weight: 700;
     margin-left: 64px;
+
+    // Tablet screens max-width 1024px
+    @media only screen and (max-width: 64em) {
+        display: none;
+    }
+    
 `
 
 export const HowItWorksDescription = styled.p`
@@ -29,6 +46,11 @@ export const HowItWorksDescription = styled.p`
     font-weight: 500;
     font-size: 1.5rem;
     margin-left: 64px;
+
+    // Tablet screens max-width 1024px
+    @media only screen and (max-width: 64em) {
+        display: none;
+    }
 
 `
 
@@ -41,10 +63,21 @@ export const HowItWorksContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 70%;
+
+    // Tablet screens max-width 1024px
+@media only screen and (max-width: 64em) {
+    width: 100%;
+}
 `
 
 export const InnerInnerContainer = styled.div`
     display: flex;
+
+    // Tablet screens max-width 1024px
+@media only screen and (max-width: 64em) {
+    width: 100%;
+    flex-direction: column;
+}
 `
 
 export const ProgramsIPContainer = styled.div`
@@ -52,6 +85,11 @@ export const ProgramsIPContainer = styled.div`
     width: 100%;
     height: 100vh;
     align-items: center;
+
+    // Tablet screens max-width 1024px
+    @media only screen and (max-width: 64em) {
+        flex-wrap: wrap;
+    }
 `
 export const ProgramsIPHeader = styled(MainHeader)`
     text-orientation: upright;
@@ -65,6 +103,11 @@ background-image: url(${programsIPMainImage});
 background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
+
+// Tablet screens max-width 1024px
+@media only screen and (max-width: 64em) {
+    width: 75%;
+}
 `
 
 export const PrizeHeader = styled(SecondaryHeader)`
@@ -83,6 +126,11 @@ export const DeadlineHeader = styled(SecondaryHeader)`
 export const VideoContainer = styled.div`
     display: flex;
     position: relative;
+
+    // Tablet screens max-width 1024px
+@media only screen and (max-width: 64em) {
+    flex-direction: column;;
+}
 `
 
 export const VideoInnerContainer = styled.div`
@@ -102,6 +150,14 @@ export const VideoHeader = styled(MainHeader)`
     display: flex;
     align-items: center;
     margin: 0;
+
+    // Tablet screens max-width 1024px
+@media only screen and (max-width: 64em) {
+    width: 100%;
+    height: 60px;
+    writing-mode: horizontal-tb;
+    justify-content: space-between;
+}
 `
 
 export const VideoImage = styled.img`
@@ -111,6 +167,12 @@ background-image: url(${programsIPMainImage});
 background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
+
+// Tablet screens max-width 1024px
+@media only screen and (max-width: 64em) {
+    width: 100%;
+    height: 300px;
+}
 `
 
 export const PhotoHeader = styled(VideoHeader)``
@@ -135,6 +197,15 @@ div {
     max-width: 300px;
     margin-left: 64px;
 }
+
+// Tablet and Mobile max-width: 1024px
+@media only screen and (max-width: 64em) {
+    display: none;
+
+    div {
+        display: none;
+    }
+}
 `
 
 // Top Picks
@@ -143,14 +214,19 @@ export const TopBoxContainer = styled.div`
     flex-wrap: wrap;
     gap: 1rem;
 
-    // Mobile max-width: 640px
-@media only screen and (max-width: 40em) {
+    // Tablet and Mobile max-width: 1024px
+@media only screen and (max-width: 64em) {
     flex-direction: column;
 }
 `
 
 export const TopBoxInnerContainer = styled.div`
     width: 32.2%;
+
+    // Tablet and Mobile max-width: 1024px
+    @media only screen and (max-width: 64em) {
+        width: 100%;
+    }
 `
 
 export const TopBoxHeader = styled.h1`
@@ -163,11 +239,9 @@ align-items: center;
 font-family: var(--lato);
 text-transform: uppercase;
 
-// Mobile max-width: 640px
-@media only screen and (max-width: 40em) {
-    width: 90%;
+// Mobile and tablet max-width: 1024px
+@media only screen and (max-width: 64em) {
     height: 58px;
-    margin: auto;
     letter-spacing: 0.5rem;
 }
 `
@@ -213,18 +287,35 @@ export const ViewSubmissionButton = styled(LearnMoreBtn)`
 
 // All Submissions
 
-export const AllHeader = styled(MainHeader)``
+export const AllHeader = styled(MainHeader)`
+
+
+// Tablet screens max-width 1024px
+@media only screen and (max-width: 64em) {
+    letter-spacing: 0.3rem;
+}
+
+`
 
 export const SubmissionsGrid = styled.div`
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+
+    // Tablet screens max-width 1024px
+    @media only screen and (max-width: 64em) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 export const SubmissionsGridImage = styled.img`
     width: 100%;
     height: 260px;
     background-image: url(${submissionsThumbnail});
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 `
 
 export const ViewMoreButton = styled(ResetDefaultButtonStyles)`
