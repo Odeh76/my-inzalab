@@ -7,6 +7,7 @@ import TwentyFiveUnderTwentyFive from '../TwentyFiveUnderTwentyFive'
 import Programs from '../Programs'
 import Resources from '../Resources'
 import Insiders from '../Insiders'
+import Clients from '../Clients'
 import { Layout } from '../../components'
 // import Posts from '../../components/Posts'
 import { motion } from 'framer-motion/dist/framer-motion'
@@ -27,6 +28,7 @@ function Home() {
             </HomeContainer>
             <Video />
             <About />
+            <Clients />
             <TwentyFiveUnderTwentyFive />
             <Programs />
             <Resources />

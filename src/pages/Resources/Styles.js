@@ -61,6 +61,7 @@ export const ResourcesLinks = styled.button`
     align-items: center;
     justify-content: flex-start;
     border: 1px solid var(--blackMain);
+    color: var(--blackMain);
     width: 100%;
     height: 96px;
     font-family: var(--lato);
