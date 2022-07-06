@@ -12,4 +12,6 @@ font-family: var(--lato);
 text-transform: uppercase;
 font-weight: 900;
 letter-spacing: 0.3rem;
+margin-top: 16px;
+margin-bottom: 16px;
 `

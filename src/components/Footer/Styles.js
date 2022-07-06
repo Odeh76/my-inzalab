@@ -73,7 +73,7 @@ export const NewsLetterContainer = styled.div`
 
 
 export const NewsLetterInput = styled.input`
-    width: 98%;
+    width: 97%;
     height: 32px;
     border-bottom: 1px solid var(--blackMain);
     border-top: none;

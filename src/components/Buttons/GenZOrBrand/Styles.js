@@ -11,4 +11,6 @@ export const GenZOrBrandBtn = styled(ResetDefaultButtonStyles)`
     border: 1px solid var(--blackMain);
     font-family: var(--lato);
     font-size: 3rem;
+
+
 `

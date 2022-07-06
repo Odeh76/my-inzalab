@@ -22,10 +22,13 @@ export const ITOsYellowDivider = styled.div`
     margin-top: -4px;
 `
 
-export const ITOsMainHeader = styled(MainHeader)`
+export const ITOsMainHeader = styled.h1`
+    font-family: var(--lato);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
     position: absolute;
+    right: 20px;
     top: 140px;
-    right: 8px;
     color: var(--whiteMain);
 
     span {
@@ -35,18 +38,22 @@ export const ITOsMainHeader = styled(MainHeader)`
 
 export const ITOsHonoreeHeader = styled(MainHeader)`
     font-weight: 700;
-    margin-left: 48px;
 `
 
 export const ITOsHonoreeContainer = styled.div`
     width: 100%;
     display: flex;
-    margin-left: 48px;
     gap: 0.75rem;
+
+    // Mobile max-width: 640px
+    @media only screen and (max-width: 40em) { 
+        flex-direction: column;
+        margin: 0;
+    } 
 `
 
 export const ITOsHonoreeMainImage = styled.img`
-    width: 60%;
+    width: 100%;
     height: 250px;
     background-image: url(${meetTheITOsHonoreeMainImage});
     background-position: center center;
@@ -55,7 +62,6 @@ export const ITOsHonoreeMainImage = styled.img`
 `
 
 export const ITOsInsiderOfTheMonth = styled.div`
-    width: 30%;
     height: 250px;
     border: 1px solid var(--blackMain);
     text-transform: uppercase;
@@ -107,7 +113,6 @@ export const ITOsCurrentInsidersHeader = styled(ITOsHonoreeHeader)`
 `
 
 export const ITOsCurrentInsidersGrid = styled(GridContainer)`
-    margin-left: 48px;
 `
 
 export const ITOsPastInsidersHeader = styled(ITOsHonoreeHeader)``
